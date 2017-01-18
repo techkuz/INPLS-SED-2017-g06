@@ -388,6 +388,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{KuzmaTerm}{}%
+{%
+\gls@defglossaryentry{KuzmaTerm}%
+{%
+name={KuzmaTermName},%
+sort={KuzmaTermName},%
+type={main},%
+first={KuzmaTermName},%
+firstplural={KuzmaTermNames},%
+text={KuzmaTermName},%
+plural={KuzmaTermNames},%
+description={Kuzma Term description},%
+descriptionplural={Kuzma Term description},%
+symbol={\msrglsstyle {KuzmaTerm}},%
+symbolplural={\msrglsstyle {KuzmaTerm}},%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{societics}{}%
 {%
 \gls@defglossaryentry{societics}%
