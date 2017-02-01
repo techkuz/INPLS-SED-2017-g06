@@ -47,9 +47,7 @@ Description of the categories of persons targeted by this document together with
 
 
 \section{\mysystemname}
-Here 
-  
-   
+Here test test
 
 \subsection{Actors \& Functionalities}
 Overview of all the \textbf{\emph{\glspl{actor}}} interacting with the software
@@ -57,6 +55,39 @@ being them either humans (called end-users in the standard
 \cite{IEEE-2001-userdocumentation}) or not. For each actor, describe the main
 software functions that are offered to him. Structure of this sub-section MUST
 be by actor/functionalities.
+\begin{itemize}
+\item \emph{actComCompany}: Communication Company 
+	\begin{itemize}
+	  \item Delivering any SMS sent by any human to the iCrash’s phone number.
+	  \item Transmit SMS messages from the ABC company that owns the iCrash system
+	  to any human having an SMS compatible device accessible using aphone number.
+	\end{itemize}
+\item \emph{actAdministrator}: Administrator
+	\begin{itemize}
+	  \item  Adding or deleting coordinator actors from the system and its
+	  environment.
+	\end{itemize}
+\item \emph{actCoordinator}: Coordinator
+	\begin{itemize}
+	  \item Monitoring the existing alerts and crisis.
+	  \item Managing alerts and crisis until their termination.
+	\end{itemize}
+\item \emph{actActivator}: Activator
+	\begin{itemize}
+	  \item Communicate the current time to the system.
+	  \item Notify the administrator that some crisis are still pending for a too
+	  long time.
+	\end{itemize}
+\item \emph{actMsrCreator}: Creator
+	\begin{itemize}
+	  \item Installing the iCrash system.
+	  \item Defining the values for the initial system’s state.
+	  \item Defining the values for the initial system’s environment.
+	  \item Ensuring the integration of the iCrash system with its initial
+	  environment.
+	\end{itemize}
+\end{itemize}
+
 
 
 \subsection{Operating environment}
