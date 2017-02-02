@@ -3,11 +3,31 @@
 
 
 \section{Scope}
-Introduction scope goes right here. An example of using glossay might be.Zzzz
-wooZ
+The intention is that this document will provide a comprehensive guide, enabling
+users to use iCrash to its full extent. It is in three parts.\\
+
+Usage Guide which is aimed at describing the general use of the software since
+it is deployed, configured and run. Special attention is paid to actors which
+rely on the software to perform a set of business activities (procedures) aimed at reaching a particular goal. Procedures are split into two groups: multi-procedures and mono-procedures.\\
+
+Software Operations which explain allowed software operations using parameters,
+pre- and post-conditions, output messages, triggering.\\
+
+Error messages and problem resolutions which lists and explains in detail all
+problems that might have arisen while using the software. \\
+
+This document does not provide details about relationships with software
+stakeholders as it is described in additional software licence agreement. It
+also contains limited information of copyright and trademark notices.\\
+
+This document is not intended to be final as updates and corrections are planned
+to be added later. \\
+
+This document may be used with iCrash Design Document, deployment iCrash
+version, development iCrash version.\\
 
 
-This document \gls{KuzmaTerm}  provides \ldots
+%This document \gls{KuzmaTerm}  provides \ldots
 %Example: This document provides minimum acceptable information for knowing how
 % to use the software system \mysystemname.
 
@@ -47,8 +67,11 @@ This document is meant to \ldots
 Description of the categories of persons targeted by this document together with the description of how they are expected to exploit the content of the document.
 
 
-\section{\mysystemname}
-Here test test
+\section{\MySystem(v1.0)}
+The iCrash system belongs to the Crisis Management Systems Domain. It is a
+system dedicated to crisis professional and non professional end users. It has
+to be considered as an autonomous and external service for the society. It is not an institutional system certified and guaranteed by any governmental entity and thus, must be used with caution.\\
+
 
 \subsection{Actors \& Functionalities}
 Overview of all the \textbf{\emph{\glspl{actor}}} interacting with the software
@@ -92,7 +115,18 @@ be by actor/functionalities.
 
 
 \subsection{Operating environment}
-Brief overview of the infrastructure on which the software is deployed and used.
+The iCrash application is supposed to be deployed over at least 3 different
+computers: 1 database server, 1 application server, and at least 1 client.\\
+
+However in order to ease deployment process deployment via Vagrant is possible.
+It requires single PC to deploy and run iCrash.\\
+
+Vagrant (author rights described in Product Information - Copyright section) is
+an open-source software product for building and maintaining portable virtual
+development environments. It is used to demonstrate the application working using users machine, servers application and database machine.\\
+
+Another application required for successful deployment of iCrash is VirtualBox
+(ver. 5.1.x). \\
 
 \section{Document structure}  
 Information on how this document is organised and it is expected to be
