@@ -2,3 +2,15 @@
 /tmp-latex/
 *.pdf
 design.pdf
+/design.aux
+/design.dvi
+/design.glo
+/design.idx
+/design.ilg
+/design.ind
+/design.lof
+/design.log
+/design.out
+/design.ps
+/design.toc
+/design.xdy
