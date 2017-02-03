@@ -193,21 +193,23 @@ existing crisis or alerts to decide on next actionsto undertake
 
 \subsection{Administrator}
 
-\subsubsection{Administrate The System}
+\subsubsection{Add New Coordinator}
 \vspace{0.5cm}
 \hrule
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] UgAdministrateTheSystem
-\item [\textbf{Scope:}] System
-\item [\textbf{Primary Actor}:] Administrator
-\item [\textbf{Goal:}] Administrator’s goal is to follow an identification procedure to be allowed to add or delete thenecessary crisis coordinators that will be granted the responsibility to handle alerts and crisis.
+\item [\textbf{Procedure:}] AddCoordinator
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Administrator Kuzme
+\item [\textbf{Secondary Actor(s)}:] Coordinator Maria
+\item [\textbf{Goal:}] Add a new coordinator Maria to the system.
 \item [\textbf{Level}:] User-Goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Administrator} executes the ugSecurelyUseSystem use case\\
-2. \emph{Administrator} executes the oeAddCoordinator use case\\
-3. \emph{Administrator} executes the oeDeleteCoordinator use case\\
-
+1. \emph{Kuzma} executes the login use case\\
+2. \emph{Kuzma} click button `Add a coordinator`.\\
+3. \emph{Kuzma} enters ID `1`, login `Maria` and password `1234`. \\
+4. \emph{Kuzma} click button `Create`. \\
+4. \emph{Kuzma} \emph{CMS} informs `Kuzma` that coordinator `Maria` is added. 
 }
 
 \end{lyxlist}
