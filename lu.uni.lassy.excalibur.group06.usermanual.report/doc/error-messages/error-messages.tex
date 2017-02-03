@@ -24,9 +24,13 @@ machines were started correctly. In particular you should login into the server 
 I made iCrash project changes in order to implement the variants. Before
 changing I could start the project but after modifications, an error is
 displayed. I think maybe this is an error in the server.\\
+
+\begin{figure}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./images/er1.eps}
 \end{center}
+\caption{Error message - problems with log-in}
+\end{figure}
 
 \subsection{Probable cause}
 This problem may happen because you made a copy of the iCrash project into the
@@ -44,9 +48,13 @@ In case you still have problems to run the web application, have a look into the
 \subsection{Problem identification}
 I would like to modify a class in iCrash H5, whose GUI was created with Vaadin
 Designer, but it looks broken and is unmodifiable. What could I do?\\
+
+\begin{figure}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./images/er2.eps}
 \end{center}
+\caption{Error message - problems with GUI}
+\end{figure}
 
 \subsection{Probable cause}
 GUI might not be supported by your drivers.
@@ -55,9 +63,13 @@ GUI might not be supported by your drivers.
 Method 1: 
 You need to change ComCompanyDesign's theme from icrash to valo.
 It then solves the problem:
+
+\begin{figure}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./images/er3.eps}
 \end{center}
+\caption{Error message - solution to GUI}
+\end{figure}
 
 Method 2:\\
 Unzip 1.zip to project's WebContent VAADIN-themes-icrash\\
