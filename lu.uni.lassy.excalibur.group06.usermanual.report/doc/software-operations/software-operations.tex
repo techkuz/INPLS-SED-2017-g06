@@ -1,11 +1,8 @@
 \chapter{Software operations}
 \label{chap:soptware_operations}
-
 \section{SetClock}
 \label{operation:CloseCrisis}
-
 An activator sets the date and time information in the system's State.
-
 \begin{description}
 	\item \textbf{Parameters:} DateAndTime
 	\item \textbf{Precondition:} The system is initialized and the date and time
@@ -70,15 +67,12 @@ test to make a new attempt of authentication.
 	\end{enumerate}
 \end{description}
 
-
 \subsection{Login - example}
 
 \begin{figure}[h]
     \includegraphics[scale=0.5]{login.eps}
 	\caption{Captcha test}
 \end{figure}
-
-
 
 \section{Logout}
 \label{operation:Logout}
@@ -98,8 +92,6 @@ The actor loggs out from the system.
 		\item Click on the button "Log off"
 	\end{enumerate}
 \end{description}
-
-
 
 \section{AddCoordinator}
 \label{operation:AddCoordinator}
@@ -160,7 +152,6 @@ The administrator deletes a coordinator from the system.
 	\end{enumerate}
 \end{description}
 
-
 \section{HandleAlert}
 \label{operation:HandleAlert}
 
@@ -189,9 +180,6 @@ An coordinator handles alerts received by changing their status.
 	\caption{Coordinator panel - alerts}
 \end{figure}
 
-
-
-
 \section{GetAlertSet}
 \label{operation:GetAlertSet}
 
@@ -210,8 +198,6 @@ An coordinator gets a set of alerts with particular status.
 		\item Choose a particular status from the drop-down list.
 	\end{enumerate}
 \end{description}
-
-
 
 \section{GetCrisisSet}
 \label{operation:GetCrisisSet}
@@ -232,8 +218,6 @@ An coordinator gets a set of crises with particular status.
 		\item Choose a particular crisis' status from the drop-down list.
 	\end{enumerate}
 \end{description}
-
-
 
 \section{Alert}
 \label{operation:Alert}
@@ -274,7 +258,6 @@ An operator of communication company sends an alert received from a human.
     \includegraphics[scale=0.6]{com_company.eps}
 	\caption{Communication company panel}
 \end{figure}
-
 
 \section{HandleCrisis}
 \label{operation:HandleCrisis}
@@ -330,7 +313,6 @@ An coordinator updates the textual information for a crisis.
 	\end{enumerate}
 \end{description}
 
-
 \section{SetStatusCrisis}
 \label{operation:SetStatusCrisis}
 
@@ -352,7 +334,6 @@ An coordinator sets the status of a crisis.
 		crisis" or in case of cancel - "Cancel"
 	\end{enumerate}
 \end{description}
-
 
 \section{CloseCrisis}
 \label{operation:CloseCrisis}
@@ -379,7 +360,8 @@ An coordinator closes a crisis.
 
 The administrator gets the list of alerts and crises on the concrete date or
 within a defined period with extra time statistics.
-When the alert was validated/invalidated; when the crisis was handled; all the times when the status was changed; when reported; when closed.
+When the alert was validated/invalidated, when the crisis was handled, all the
+times when the status was changed, when reported, when closed.
 Also the administrator gets an average time for validating alerts and closing crises.
 
 
@@ -406,14 +388,48 @@ Also the administrator gets an average time for validating alerts and closing cr
 \subsection{GetTimeStatistics - example}
 
 \begin{figure}[h]
-    \includegraphics[scale=0.5]{alert_stats.eps}
+    \includegraphics[scale=0.4]{alert_stats.eps}
 	\caption{Time statistics of alerts}
 \end{figure}
 
 \begin{figure}[h] 
-    \includegraphics[scale=0.5]{crisis_stats.eps}
+    \includegraphics[scale=0.4]{crisis_stats.eps}
 	\caption{Time statistics of crises}
 \end{figure}
 
 
+\section{InformationDiffusion}
+\label{operation:InformationDiffusion}
+
+A humand kind provides information (last/first name, telephone number) to the
+iCrash administrator about its emergency contacts (family) in advance.
+Communication Company (CC) sends test messages to the emergency contacts in
+order to confirm their sign-up.
+If in case of a crisis the message comes with status "Victim" CC notifies
+additionally the family members.
+
+\begin{description}
+	\item \textbf{Precondition:} The system is started and the administrator is
+	logged in.
+	\item \textbf{Post-condition:} All the family members are informed about crisis
+	in which his relative might has been involved.
+	\item \textbf{Output messages:} None
+	
+	\item \textbf{Triggering:}
+	
+	\begin{enumerate}
+		\item In the admin panel press on the button "Statistics".
+		\item Press on the button "Alerts" or "Crises".
+		\item Choose the date or press on the radio button "Period of time" for
+		chossing a period.
+		\item To get statistics - prress on the button "Get statistics".
+		\item To close the statistics panel - press on the button "Close".
+	\end{enumerate}
+\end{description}
+\subsection{InformationDiffusion - example}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{diffusion.eps}
+	\caption{Information diffusion to the familu members}
+\end{figure}
 
