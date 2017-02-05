@@ -120,6 +120,40 @@ different stages of the process while its is performed by the actor(s).
 Mono-procedures must be grouped by actors.
 
 
+\subsection{Authenticated}
+
+\subsubsection{Log in to the system}
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Login
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Authenticated Kuzma
+\item [\textbf{Goal:}] To login to the system
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Kuzma} enters his login and password. \\
+2. \emph{Kuzma} click button `Logon`.\\
+3. \emph{CMS} checks that login and password correct.\\
+4. \emph{Kuzma} authenticated in the system now.\\
+
+\item [\textbf{Extensions}]:\\
+3.a \emph{CMS} enters his login or password incorrectly.
+\hspace*{0.5cm} 1.a.1 \emph{CMS} shows the warning Incorrect data\\ 
+\hspace*{0.5cm} \textbf{procedure continues at step 1}
+1.b \emph{Kuzma} enters his login or password incorrectly three times.
+\hspace*{0.5cm} 1.b.1 \emph{CMS} shows captcha test\\ 
+\hspace*{0.5cm} 1.b.2 \emph{Kuzma} shows captcha test\\ 
+\hspace*{0.5cm} \textbf{procedure continues at step 1}
+
+}
+
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+
 \subsection{Coordinator}
 
 \subsubsection{Global crisis handling}
@@ -207,7 +241,7 @@ existing crisis or alerts to decide on next actionsto undertake
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{Kuzma} executes the login use case\\
 2. \emph{Kuzma} click button `Add a coordinator`.\\
-3. \emph{Kuzma} enters ID `1`, login `Maria` and password `1234`. \\
+3. \emph{Kuzma} enters ID `2`, login `Maria` and password `1234`. \\
 4. \emph{Kuzma} click button `Create`. \\
 4. \emph{Kuzma} \emph{CMS} informs `Kuzma` that coordinator `Maria` is added. 
 }
@@ -216,10 +250,31 @@ existing crisis or alerts to decide on next actionsto undertake
 \hrule
 \vspace{0.5cm}
 
+\subsubsection{Delete Coordinator}
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] DeleteCoordinator
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Administrator Kuzme
+\item [\textbf{Secondary Actor(s)}:] Coordinator Nikita
+\item [\textbf{Goal:}] Delete coordinator Nikita from the system.
+\item [\textbf{Level}:] User-Goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Kuzma} executes the login use case\\
+2. \emph{Kuzma} click button `Delete a coordinator`.\\
+3. \emph{Kuzma} enters ID `1`. \\
+4. \emph{Kuzma} click button `Delete`. \\
+4. \emph{Kuzma} \emph{CMS} informs `Kuzma` that coordinator `Nikita` is deleted. 
+}
+
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
 \subsubsection{MyProcedure2MyActor2}
 \ldots
-
-
 
 
 
