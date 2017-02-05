@@ -436,25 +436,25 @@ Communication company panel - the figure 4.10.
 \section{InformationDiffusion}
 \label{operation:InformationDiffusion}
 
-A humand kind provides information (last/first name, telephone number) to the
-iCrash administrator about its emergency contacts (family) in advance.
-Communication Company (CC) sends test messages to the emergency contacts in
-order to confirm their sign-up.
-If in case of a crisis the message comes with status "Victim" CC notifies
-additionally the family members.
+A human kind provides  information  (last/first  name,  telephone number)  to  the  iCrash administrator  about  its  emergency  contacts (family). Administrator  adds  this information  to  the  iCrash  database.
+Communication  Company (CC) sends test messages to the emergency contacts in
+order to confirm their sign-up and validate/invalidate their status. If user 
+is  a  victim  (status  in  iCrash  is  checked  as victim) CC  notifies additionally  the  family  members  listed  earlier.  It  does  so  via  sending  alert  text message  containing  victim's  first  and  last  name
+When CC receives any updates about ongoing crisis these updates are also sent to
+the family members via text-messages. 
 
 \begin{description}
 	\item \textbf{Precondition:} The system is started and the administrator is
 	logged in.
 	\item \textbf{Post-condition:} All the family members are informed about crisis
-	in which his relative might has been involved.
+	in which his relative is involved.
 	\item \textbf{Output messages:} None
 	
 \end{description}
 
 
 \subsection{InformationDiffusion - example}
-Sending sms to the relatives by the communication company - the fugure 4.11.
+Sending sms to the relatives by the communication company - the figure 4.11.
 \begin{figure}[h]
     \includegraphics[scale=0.75]{diffusion.eps}
 	\caption{Information diffusion to the family members}
