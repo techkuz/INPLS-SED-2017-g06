@@ -1,5 +1,10 @@
 \chapter{Software operations}
 \label{chap:soptware_operations}
+
+\begin{center}
+	{\bf \Large Activator}
+\end{center}
+
 \section{SetClock}
 \label{operation:CloseCrisis}
 An activator sets the date and time information in the system's State.
@@ -25,6 +30,9 @@ An activator sets the date and time information in the system's State.
 
 \subsection{SetClock - example}
 
+The iCrash Activator panel is depicted on the figure 4.1. After activating a new
+date and time the activator will see the message "Updated" - figure 4.2. 
+
 \begin{figure}[h]
     \includegraphics[scale=0.75]{setclock.eps}
 	\caption{Setting the clock of the system}
@@ -35,11 +43,17 @@ An activator sets the date and time information in the system's State.
 	\caption{Date and time was updated successfuly}
 \end{figure}
 
+
+\begin{center}
+	{\bf \Large Administator/Coordinator}
+\end{center}
+
 \section{Login}
 \label{operation:Login}
 
-The user enters the system by entering credentials - login and password. The
-user has three attemps to enter correct login and password, after three
+The administator or coordinator enters the system by entering credentials -
+login and password.
+The user has three attemps to enter correct login and password, after three
 unsuccessful attempts there is a captcha test. The user has to pass the captcha
 test to make a new attempt of authentication.
 
@@ -67,10 +81,12 @@ test to make a new attempt of authentication.
 	\end{enumerate}
 \end{description}
 
-\subsection{Login - example}
+\subsection{Login - iCrashAdmin}
 
+In the figure 4.3 it is depicted the authentification view  for the
+administator.
 \begin{figure}[h]
-    \includegraphics[scale=0.5]{login.eps}
+    \includegraphics[scale=0.4]{login.eps}
 	\caption{Captcha test}
 \end{figure}
 
@@ -92,6 +108,10 @@ The actor loggs out from the system.
 		\item Click on the button "Log off"
 	\end{enumerate}
 \end{description}
+
+\begin{center}
+	{\bf \Large Administrator}
+\end{center}
 
 \section{AddCoordinator}
 \label{operation:AddCoordinator}
@@ -117,6 +137,9 @@ The administrator creates a new coordinator in the system.
 \end{description}
 
 \subsection{AddCoordinator - example}
+
+After authentifications the administrator is able to add a coordinator. You can
+see the views in the figure 4.4 and 4.5.
 
 \begin{figure}
     \includegraphics[scale=0.75]{admin.eps}
@@ -147,10 +170,59 @@ The administrator deletes a coordinator from the system.
 	\begin{enumerate}
 		\item Click on the button "Delete a coordinator' and fill in the ID of the
 		coordinator whom to delete.
-		\item Click on the button "Delete". %%%% TODO: check the button whether it
-		% is "Delete"
+		\item Click on the button "Delete".
 	\end{enumerate}
 \end{description}
+
+
+\section{GetTimeStatistics}
+\label{operation:GetTimeStatistics}
+
+The administrator gets the list of alerts and crises on the concrete date or
+within a defined period with extra time statistics: when the alert was
+validated/invalidated, when the crisis was handled, all the times when the status was changed, when reported, when closed.
+Also the administrator gets an average time for validating alerts and closing crises.
+
+
+\begin{description}
+	\item \textbf{Parameters:} Date/Period
+	\item \textbf{Precondition:} The system is started and the administrator is
+	logged in.
+	\item \textbf{Post-condition:} There is the list of alerts/crises with all the
+	time statistics and the average time for processing.
+	\item \textbf{Output messages:} None
+	
+	\item \textbf{Triggering:}
+	
+	\begin{enumerate}
+		\item In the admin panel press on the button "Statistics".
+		\item Press on the button "Alerts" or "Crises".
+		\item Choose the date or press on the radio button "Period of time" for
+		chossing a period.
+		\item To get statistics - prress on the button "Get statistics".
+		\item To close the statistics panel - press on the button "Close".
+	\end{enumerate}
+\end{description}
+
+\subsection{GetTimeStatistics - example}
+
+Getting extra time statistics of handling of alerts and crises - the figures 4.6 and 4.7.
+
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{alert_stats.eps}
+	\caption{Time statistics of alerts}
+\end{figure}
+
+\begin{figure}[h] 
+    \includegraphics[scale=0.4]{crisis_stats.eps}
+	\caption{Time statistics of crises}
+\end{figure}
+
+
+\begin{center}
+	{\bf \Large Coordinator}
+\end{center}
+
 
 \section{HandleAlert}
 \label{operation:HandleAlert}
@@ -174,9 +246,9 @@ An coordinator handles alerts received by changing their status.
 \end{description}
 
 \subsection{HandleAlert - example}
-
+iCrash coordinator alerts panel - the figure 4.8.
 \begin{figure}
-    \includegraphics[scale=0.75]{handle_alert.eps}
+    \includegraphics[scale=0.5]{handle_alert.eps}
 	\caption{Coordinator panel - alerts}
 \end{figure}
 
@@ -219,46 +291,6 @@ An coordinator gets a set of crises with particular status.
 	\end{enumerate}
 \end{description}
 
-\section{Alert}
-\label{operation:Alert}
-
-An operator of communication company sends an alert received from a human.
-
-\begin{description}
-	\item \textbf{Parameters:} HumanKind, Data, Time, PhoneNumber, GPSLocation,
-	Comment
-	\item \textbf{Precondition:} The system is initialized. Time of the alert is
-	earlier than the current time of the system. The value of the latitude part
-	of the GPSLocation is a real in the interval [-90.0 , +90.0]. The value of the longitude part
-	of the GPSLocation is a	real in the interval [-180.0 , +180.0]. The length of
-	the PhoneNumber is from 4 to 30 characters. The length of the Comment is
-	not more than 160 characters.
-	\item \textbf{Post-condition:} There is an alert with the status - "pending" in
-	the list of alerts in coordinator panel. If there were no alerts before with the
-	near location to the received alert there is a crisis with
-	the same ID as the received alert has, the type - small, the status - pending.
-	Else the received alert will be related to the nearest crisis initialized. 
-	\item \textbf{Output messages:} None
-	
-	\item \textbf{Triggering:}
-	
-	\begin{enumerate}
-		\item Choose a type of a person.
-		\item Choose a date.
-		\item Fill out the entries with the phonenumber, the latitude, the longitude
-		and the comment.
-		\item Set the time of the alert using scrollbars.
-		\item Press on the button "Send alert" or in case of cancel - "Reset form".
-	\end{enumerate}
-\end{description}
-
-\subsection{Alert - example}
-
-\begin{figure}
-    \includegraphics[scale=0.6]{com_company.eps}
-	\caption{Communication company panel}
-\end{figure}
-
 \section{HandleCrisis}
 \label{operation:HandleCrisis}
 
@@ -285,7 +317,7 @@ An coordinator handles a crisis by declaring himself as a handler of the crisis.
 \end{description}
 
 \subsection{HandleCrisis - example}
-
+iCrash coordinator crises panel - the figure 4.9.
 \begin{figure}
     \includegraphics[scale=0.6]{crisis.eps}
 	\caption{Coordinator panel - crises}
@@ -355,46 +387,49 @@ An coordinator closes a crisis.
 	\end{enumerate}
 \end{description}
 
-\section{GetTimeStatistics}
-\label{operation:GetTimeStatistics}
 
-The administrator gets the list of alerts and crises on the concrete date or
-within a defined period with extra time statistics.
-When the alert was validated/invalidated, when the crisis was handled, all the
-times when the status was changed, when reported, when closed.
-Also the administrator gets an average time for validating alerts and closing crises.
+\begin{center}
+	{\bf \Large Communication company}
+\end{center}
 
+\section{Alert}
+\label{operation:Alert}
+
+An operator of communication company sends an alert received from a human.
 
 \begin{description}
-	\item \textbf{Parameters:} Date/Period
-	\item \textbf{Precondition:} The system is started and the administrator is
-	logged in.
-	\item \textbf{Post-condition:} There is the list of alerts/crises with all the
-	time statistics and the average time for processing.
+	\item \textbf{Parameters:} HumanKind, Data, Time, PhoneNumber, GPSLocation,
+	Comment
+	\item \textbf{Precondition:} The system is initialized. Time of the alert is
+	earlier than the current time of the system. The value of the latitude part
+	of the GPSLocation is a real in the interval [-90.0 , +90.0]. The value of the longitude part
+	of the GPSLocation is a	real in the interval [-180.0 , +180.0]. The length of
+	the PhoneNumber is from 4 to 30 characters. The length of the Comment is
+	not more than 160 characters.
+	\item \textbf{Post-condition:} There is an alert with the status - "pending" in
+	the list of alerts in coordinator panel. If there were no alerts before with the
+	near location to the received alert there is a crisis with
+	the same ID as the received alert has, the type - small, the status - pending.
+	Else the received alert will be related to the nearest crisis initialized. 
 	\item \textbf{Output messages:} None
 	
 	\item \textbf{Triggering:}
 	
 	\begin{enumerate}
-		\item In the admin panel press on the button "Statistics".
-		\item Press on the button "Alerts" or "Crises".
-		\item Choose the date or press on the radio button "Period of time" for
-		chossing a period.
-		\item To get statistics - prress on the button "Get statistics".
-		\item To close the statistics panel - press on the button "Close".
+		\item Choose a type of a person.
+		\item Choose a date.
+		\item Fill out the entries with the phonenumber, the latitude, the longitude
+		and the comment.
+		\item Set the time of the alert using scrollbars.
+		\item Press on the button "Send alert" or in case of cancel - "Reset form".
 	\end{enumerate}
 \end{description}
 
-\subsection{GetTimeStatistics - example}
-
-\begin{figure}[h]
-    \includegraphics[scale=0.4]{alert_stats.eps}
-	\caption{Time statistics of alerts}
-\end{figure}
-
-\begin{figure}[h] 
-    \includegraphics[scale=0.4]{crisis_stats.eps}
-	\caption{Time statistics of crises}
+\subsection{Alert - example}
+Communication company panel - the figure 4.10.
+\begin{figure}
+    \includegraphics[scale=0.6]{com_company.eps}
+	\caption{Communication company panel}
 \end{figure}
 
 
@@ -415,21 +450,13 @@ additionally the family members.
 	in which his relative might has been involved.
 	\item \textbf{Output messages:} None
 	
-	\item \textbf{Triggering:}
-	
-	\begin{enumerate}
-		\item In the admin panel press on the button "Statistics".
-		\item Press on the button "Alerts" or "Crises".
-		\item Choose the date or press on the radio button "Period of time" for
-		chossing a period.
-		\item To get statistics - prress on the button "Get statistics".
-		\item To close the statistics panel - press on the button "Close".
-	\end{enumerate}
 \end{description}
-\subsection{InformationDiffusion - example}
 
+
+\subsection{InformationDiffusion - example}
+Sending sms to the relatives by the communication company - the fugure 4.11.
 \begin{figure}[h]
     \includegraphics[scale=0.75]{diffusion.eps}
-	\caption{Information diffusion to the familu members}
+	\caption{Information diffusion to the family members}
 \end{figure}
 
