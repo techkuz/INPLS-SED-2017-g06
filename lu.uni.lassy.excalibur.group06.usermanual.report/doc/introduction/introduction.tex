@@ -3,15 +3,16 @@
 
 
 \section{Scope}
+\section{Scope}
 The intention is that this document will provide a comprehensive guide, enabling
 users to use iCrash to its full extent. It is in three parts.\\
-
+ 
 Usage Guide which is aimed at describing the general use of the software since
 it is deployed, configured and run. Special attention is paid to actors which
 rely on the software to perform a set of business activities (procedures) aimed at reaching a particular goal. Procedures are split into two groups: multi-procedures and mono-procedures.\\
 
 Software Operations which explain allowed software operations using parameters,
-pre- and post-conditions, output messages, triggering.\\
+pre- and post-conditions, output messages, triggering.\\ 
 
 Error messages and problem resolutions which lists and explains in detail all
 problems that might have arisen while using the software. \\
@@ -32,26 +33,26 @@ version, development iCrash version.\\
 % to use the software system \mysystemname.
 
 
-This document does not \ldots 
+%This document does not \ldots 
  
-This document is not \ldots
+%This document is not \ldots
 %Example: This document is not intended to provide information about how to
 % connect, deploy, configure, or use any external device or
 % third-party software system that is rqeuired for the correct funcitoning of
 % \mysystemname.
 
  
-This document may be used with \ldots
+%This document may be used with \ldots
 %This document may be used with other documents provided by third-party
 % companies to have an overall view and correct understanding of the environment
 % and procedures where the software system \mysystemname is aimed to be deployed
 % and run.
 
 
-
-
 \section{Purpose}
-The purpose of this document is to provide a detailed description of process of using iCrash system to all potential users, describe all the functionality and provide a solutions for possible issues that can occur during the system usage 
+The purpose of this document is to provide a detailed description of process of
+using {\emph{iCrashVariantG06}} system to all potential users, describe all the
+functionality and provide a solutions for possible issues that can occur during the system usage
 
 
 \section{Intended audience}
@@ -66,41 +67,36 @@ system properly.
 
 
 \section{InnoSystem v 1.0}
-The iCrash system belongs to the Crisis Management Systems Domain. It is a
+The iCrashVariantG06 system belongs to the Crisis Management Systems Domain. It is a
 system dedicated to crisis professional and non professional end users. It has
 to be considered as an autonomous and external service for the society. It is not an institutional system certified and guaranteed by any governmental entity and thus, must be used with caution.\\
 
 
 \subsection{Actors \& Functionalities}
-Overview of all the \textbf{\emph{\glspl{actor}}} interacting with the software
-being them either humans (called end-users in the standard
-\cite{IEEE-2001-userdocumentation}) or not. For each actor, describe the main
-software functions that are offered to him. Structure of this sub-section MUST
-be by actor/functionalities.
 \begin{itemize}
-\item \emph{actComCompany}: Communication Company 
+\item \emph{ComCompany}: Communication Company 
 	\begin{itemize}
 	  \item Delivering any SMS sent by any human to the iCrash’s phone number.
 	  \item Transmit SMS messages from the ABC company that owns the iCrash system
 	  to any human having an SMS compatible device accessible using aphone number.
 	\end{itemize}
-\item \emph{actAdministrator}: Administrator
+\item \emph{Administrator}: Administrator
 	\begin{itemize}
 	  \item  Adding or deleting coordinator actors from the system and its
 	  environment.
 	\end{itemize}
-\item \emph{actCoordinator}: Coordinator
+\item \emph{Coordinator}: Coordinator
 	\begin{itemize}
 	  \item Monitoring the existing alerts and crisis.
 	  \item Managing alerts and crisis until their termination.
 	\end{itemize}
-\item \emph{actActivator}: Activator
+\item \emph{Activator}: Activator
 	\begin{itemize}
 	  \item Communicate the current time to the system.
 	  \item Notify the administrator that some crisis are still pending for a too
 	  long time.
 	\end{itemize}
-\item \emph{actMsrCreator}: Creator
+\item \emph{MsrCreator}: Creator
 	\begin{itemize}
 	  \item Installing the iCrash system.
 	  \item Defining the values for the initial system’s state.
@@ -108,6 +104,16 @@ be by actor/functionalities.
 	  \item Ensuring the integration of the iCrash system with its initial
 	  environment.
 	\end{itemize}
+\item \emph{Human}: Human
+\begin{itemize}
+  \item Inform the iCrash system about the crisis situation he detected.
+  \item Be informed about the situation of the crisis he his related to as a
+  victim or witness.
+\end{itemize}
+\item \emph{Authenticated}: Authenticated
+\begin{itemize}
+  \item Actor that can be authenticated in the system.
+\end{itemize}
 \end{itemize}
 
 

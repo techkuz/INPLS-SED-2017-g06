@@ -1,123 +1,8 @@
 \chapter{Usage Guide}
 \label{chap:usage_guide}
 
-This section is aimed at describing the general use of the software, since it is
-\textbf{deployed, configured} and \textbf{run}.
-
-This software is used by actors. These actors rely on the software to perform a
-set of business activities (called here procedures) aimed at reaching a
-particular goal. 
-
-These prodedures are splet in two groups:
-\begin{itemize}
-  \item \textbf{Multi-procedures:} which are procedures at \textbf{summary} or
-  \textbf{user-goal} level involving several active or pro-active actors.
-  Each of these procedures aims at illustrating intertwined
-  business activities required to be performed by the involved actors
-  to reach the expected goal. Each business activity between the system and an
-  actor must correspond to a \textbf{system operation} instance given with actual parameter values.
-
-  \item \textbf{Mono-procedures:} which are procedures at \textbf{summary} or
-  \textbf{user-goal} level involving only one active or pro-active actor.
-  Each of these procedures aims at illustrating the required business
-  activities an actor has to perform to reach the expected goal. Each business
-  activity between the system and the actor must correspond to a \textbf{system
-  operation} instance given with actual parameter values.
-
-\end{itemize}
-
-
-
-
-Each process has to be documented using the following textual description
-template \cite{armour01usecase} \textbf{BUT its content must be as low level as possible with actual values}:
-
-
-
-
-
-
-
-
-
-
-
-
-
-\vspace{0.5cm}
-\hrule
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] UgSecurelyUseSystem
-\item [\textbf{Scope:}] System
-\item [\textbf{Primary Actor}:] Authenticated
-\item [\textbf{Goal:}] the Administrator’s goal is to follow an identification procedure to be allowed to add or delete thenecessary crisis coordinators that will be granted the responsibility to handle alerts and crisis.
-\item [\textbf{Level}:] User-Goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Authenticated} executes the oeLogin use case\\
-2. \emph{Authenticated} executes the oeLogout use case\\
-}
-
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
-
-
-\Remark{Processes presentation}: processes should be introduced to the
-reader in a pedagogical manner. Thus, simple and common processes should be presented before
-than more complex and less utilised ones.
-
-\Remark{Graphical User Interfaces (GUIs)}: include GUIs screenshots to show the
-different stages of the process while its is performed by the actor(s).
-
-
-
-
-
-
-\section{Multi-procedures}
-
-
-\subsection{Deploy And Run}
-\vspace{0.5cm}
-\hrule
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] SuDeployAndRun
-\item [\textbf{Scope:}] System
-\item [\textbf{Primary Actor}:] Administrator
-\item [\textbf{Secondary Actor(s)}:] MrsCreator,\\
-                  Coordinator, \\
-                  Activator, \\
-                  ComCompany
-\item [\textbf{Goal:}] The goal is to install the iCrash system on its infrastructure and to exploit its capacities related to thesecure administration and efficient handling of car crash situations depending on alerts received.
-\item [\textbf{Level}:] Summary level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{MrsCreator} executes the oeCreateSystemAndEnvironment use case\\
-2. \emph{Administrator} executes the ugAdministrateTheSystem use case\\
-3. \emph{ComCompany} executes the oeAlert use case\\
-4. \emph{Activator} executes the oeSetClock use case\\
-5. \emph{Activator} executes the oeSollicitateCrisisHandling use case\\
-6. \emph{Coordinator} executes the oeGlobalCrisisHandling use case\\
-
-
-\item [\textbf{Extensions}]:\\
-2.a None internal worker can execute the mission\\
-\hspace*{0.5cm} 2.a.1 \emph{CMS} sends a request for an external resource to the \emph{ERS} actor instance\\
-\hspace*{0.5cm} 2.a.2 \emph{ERS} informs \emph{CMS} that the request can be processed\\
-\hspace*{0.5cm} 2.a.3 \emph{ERS} informs \emph{CMS} that \emph{Bob} can now be selected as first aid worker\\
-\hspace*{0.5cm} \textbf{procedure continues at step 3}
-
-}
-
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
-
-
 
 \section{Mono-procedures}
-Mono-procedures must be grouped by actors.
 
 
 \subsection{Authenticated}
@@ -133,96 +18,47 @@ Mono-procedures must be grouped by actors.
 \item [\textbf{Goal:}] To login to the system
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Kuzma} enters his login and password. \\
+1. \emph{Kuzma} enters his login 'Kuzma' and password 'qwerty'. \\
 2. \emph{Kuzma} click button `Logon`.\\
 3. \emph{CMS} checks that login and password correct.\\
-4. \emph{Kuzma} authenticated in the system now.\\
-
+4. \emph{CMS} informs \emph{Kuzma} that he is authenticated.\\
 \item [\textbf{Extensions}]:\\
-3.a \emph{CMS} enters his login or password incorrectly.
-\hspace*{0.5cm} 1.a.1 \emph{CMS} shows the warning Incorrect data\\ 
-\hspace*{0.5cm} \textbf{procedure continues at step 1}
-1.b \emph{Kuzma} enters his login or password incorrectly three times.
-\hspace*{0.5cm} 1.b.1 \emph{CMS} shows captcha test\\ 
-\hspace*{0.5cm} 1.b.2 \emph{Kuzma} shows captcha test\\ 
-\hspace*{0.5cm} \textbf{procedure continues at step 1}
-
+3.a \emph{CMS} detects that login or password incorrect.\\
+\hspace*{0.5cm} 1.a.1 \emph{CMS} shows the warning 'Incorrect data'\\ 
+\hspace*{0.5cm} \textbf{procedure continues at step 1}\\
+3.b \emph{Kuzma} detects that login or password was enetered incorrectly three
+times\\
+\hspace*{0.5cm} 3.b.1 \emph{CMS} shows captcha test.\\ 
+\hspace*{0.5cm} 3.b.2 \emph{Kuzma} types characters '504375' from the image.\\ 
+\hspace*{0.5cm} 3.b.3.1 \emph{CMS} checks that answer to captcha test is
+correct.\\
+\hspace*{0.5cm} \textbf{procedure continues at step 1} \\
+\hspace*{0.5cm} 3.b.3.2 \emph{CMS} detects that answer to captcha test was
+enetered incorrectly.\\
+\hspace*{0.5cm} \textbf{procedure continues at step 3.b.1}
 }
-
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
 
-
-\subsection{Coordinator}
-
-\subsubsection{Global crisis handling}
+\subsubsection{Log out from the system}
 \vspace{0.5cm}
 \hrule
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] SuGlobalCrisisHandling
-\item [\textbf{Scope:}] System
-\item [\textbf{Primary Actor}:] Coordinator
-\item [\textbf{Goal:}] The Coordinator’s goal is to monitor the alerts
-receivedand the corresponding crisis in order to act as necessary to handle the
-crisis.
-\item [\textbf{Level}:] Summary level
+\item [\textbf{Procedure:}] Logout
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Authenticated Kuzma
+\item [\textbf{Goal:}] To logout from the system
+\item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Coordinator} executes the ugSecurelyUseSystem use case\\
-2. \emph{Coordinator} executes the ugMonitor use case\\
-3. \emph{Coordinator} executes the ugManageCrisis use case\\
-
+1. \emph{Kuzma} click button `Logoff`.\\
+2. \emph{CMS} informs \emph{Kuzma} that he is not authenticated anymore.\\
 }
-
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
 
-\subsubsection{Manage Crisis}
-
-\vspace{0.5cm}
-\hrule
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] UgManageCrisis
-\item [\textbf{Scope:}] System
-\item [\textbf{Primary Actor}:] Coordinator
-\item [\textbf{Goal:}] The goal is to do an action that makes the handling of a crisis or an alert progress.
-\item [\textbf{Level}:] User-Goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Coordinator} executes the oeValidateAlert use case\\
-2. \emph{Coordinator} executes the oeSetCrisisStatus use case\\
-3. \emph{Coordinator} executes the oeSetCrisisHandler use case\\
-4. \emph{Coordinator} executes the oeReportOnCrisis use case\\
-5. \emph{Coordinator} executes the oeCloseCrisis use case\\
-6. \emph{Coordinator} executes the oeInvalidateAlert use case\\
-}
-
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
-
-\subsubsection{Monitor}
-
-\vspace{0.5cm}
-\hrule
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] UgMonitor
-\item [\textbf{Scope:}] System
-\item [\textbf{Primary Actor}:] Coordinator
-\item [\textbf{Goal:}] The Coordinator’s goal is to get the detailed list of
-existing crisis or alerts to decide on next actionsto undertake
-\item [\textbf{Level}:] User-Goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Coordinator} executes the oeGetAlertsSett use case\\
-2. \emph{Coordinator} executes the oeGetCrisisSet use case\\
-}
-
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
 
 
 \subsection{Administrator}
@@ -239,13 +75,16 @@ existing crisis or alerts to decide on next actionsto undertake
 \item [\textbf{Goal:}] Add a new coordinator Maria to the system.
 \item [\textbf{Level}:] User-Goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Kuzma} executes the login use case\\
+1. \emph{Kuzma} executes the \emph{login} scenario.\\
 2. \emph{Kuzma} click button `Add a coordinator`.\\
 3. \emph{Kuzma} enters ID `2`, login `Maria` and password `1234`. \\
 4. \emph{Kuzma} click button `Create`. \\
-4. \emph{Kuzma} \emph{CMS} informs `Kuzma` that coordinator `Maria` is added. 
+5. \emph{Kuzma} \emph{CMS} informs `Kuzma` that coordinator `Maria` is added. 
+\item [\textbf{Extensions}]:\\
+5.a \emph{CMS} informs \emph{Kuzma} that coordinator with ID '2' already
+exists.\\
+\hspace*{0.5cm} \textbf{procedure ends}
 }
-
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
@@ -262,19 +101,133 @@ existing crisis or alerts to decide on next actionsto undertake
 \item [\textbf{Goal:}] Delete coordinator Nikita from the system.
 \item [\textbf{Level}:] User-Goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Kuzma} executes the login use case\\
+1. \emph{Kuzma} executes the `login' scenario\\
 2. \emph{Kuzma} click button `Delete a coordinator`.\\
 3. \emph{Kuzma} enters ID `1`. \\
 4. \emph{Kuzma} click button `Delete`. \\
-4. \emph{Kuzma} \emph{CMS} informs `Kuzma` that coordinator `Nikita` is deleted. 
+4. \emph{Kuzma} \emph{CMS} informs Kuzma that coordinator Nikita is deleted. 
+\item [\textbf{Extensions}]:\\
+5.a \emph{CMS} informs \emph{Kuzma} that coordinator with ID '1' doesn't
+exist.\\ \hspace*{0.5cm} \textbf{procedure ends}
 }
-
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
 
-\subsubsection{MyProcedure2MyActor2}
-\ldots
+
+\subsubsection{Get Time Statistics}
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] AddCoordinator
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Administrator Kuzme
+\item [\textbf{Goal:}] To get the list of alerts and crises within a defined
+period.
+\item [\textbf{Level}:] User-Goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Kuzma} executes the \emph{login} procedure\\
+2. \emph{Kuzma} click button `Statistics`.\\
+3. \emph{Kuzma} click on the button "Alerts".\\
+4. \emph{Kuzma} click on the radio button `Period of time`.\\
+4. \emph{Kuzma} enters '01/28/2017' and '01/29/2017' dates in corresponding text
+fields.\\
+5. \emph{Kuzma} click button 'Get statistics'. \\
+6. \emph{CMS} shows statistics for all the alerts from 01/28/2017 to
+01/29/2017.
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\subsection{ComCompany}
+
+\subsubsection{Alert creation}
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Alert
+\item [\textbf{Scope:}]  Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] ComCompany ComCom
+\item [\textbf{Goal:}] The goal is to create an alert about new car accident and
+send it to coordinator.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{ComCom} choose type of the person by clicking on 'witness' row. \\
+2. \emph{ComCom} enter current date '2017/02/03'. \\
+3. \emph{ComCom} enter contact phone number '+352621854584'. \\
+4. \emph{ComCom} enter longitude '4.37274928' and latitude '50.351854584' of a
+car crash.\\
+5. \emph{ComCom} enter an alert message 'There has been a car crash'.\\
+6. \emph{ComCom} set the time '12:43:22' of the alert using scrollbars.\\
+7. \emph{ComCom} click the button "Send alert".\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\subsubsection{Information diffusion}
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] InformationDiffusion
+\item [\textbf{Scope:}]  Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] ComCompany ComCom
+\item [\textbf{Goal:}] The goal is to send information about car crash to
+relatives of the victim.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{ComCom} choose type of the person by clicking on 'Family memeber' row.
+\\
+2. \emph{ComCom} enter current date '2017/02/03'. \\
+3. \emph{ComCom} enter contact phone number '+352699954584'. \\
+5. \emph{ComCom} enter message 'iCrash Notification System informs you that
+Mr.Kuznetsov requires pick-up from car crash location. His coordinates are:
+1 Universitetskaya street, Innopolis'.\\
+6. \emph{ComCom} set the time '12:43:22' of the alert using scrollbars.\\
+7. \emph{ComCom} click the button "Send".\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\subsection{Coordinator}
+
+\subsubsection{Crisis handling}
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] CrisisHandling
+\item [\textbf{Scope:}]  Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Coordinator Nikita
+\item [\textbf{Secondary Actor(s)}:] ComCompany ComCom
+\item [\textbf{Goal:}] The goal is to do an action that makes the handling of a
+crisis.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Nikita} executes the \emph{login} scenario. \\
+2. \emph{Nikita} gets alert from \emph{ComCom} about new accident. \\
+3. \emph{Nikita} press button `Validate` to inform \emph{CMS} that alert with
+ID 1 is valid.\\
+4. \emph{Nikita} press button `Crises` to open window with current crises.\\
+5. \emph{Nikita} select row that contains crisis with ID 1.\\
+6. \emph{Nikita} press button `Handle crisis` to inform \emph{CMS} that he
+handle this crisis.\\
+7. \emph{Nikita} press button `Report on crisis`\\
+8. \emph{Nikita} enter a report message '3 have been sent to the hospital' in
+report panel.\\
+9. \emph{Nikita} press button `Report` in report panel to send report to
+\emph{CMS}.\\
+10. \emph{Nikita} press button `Close crisis`..\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
 
 
 
