@@ -658,3 +658,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{GUI}{}%
+{%
+\gls@defglossaryentry{GUI}%
+{%
+name={GUI},%
+sort={GUI},%
+type={main},%
+first={GUI},%
+firstplural={GUIs},%
+text={GUI},%
+plural={GUIs},%
+description={Graphical User Interface},%
+descriptionplural={Graphical User Interface},%
+symbol={\msrglsstyle {GUI}},%
+symbolplural={\msrglsstyle {GUI}},%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
