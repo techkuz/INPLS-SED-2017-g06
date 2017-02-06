@@ -18,7 +18,7 @@
 \item [\textbf{Goal:}] To login to the system
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Kuzma} enters his login 'Kuzma' and password 'qwerty'. \\
+1. \emph{Kuzma} enters his login 'icrashadmin' and password 'qwerty'. \\
 2. \emph{Kuzma} click button `Logon`.\\
 3. \emph{CMS} checks that login and password correct.\\
 4. \emph{CMS} informs \emph{Kuzma} that he is authenticated.\\
@@ -40,6 +40,16 @@ enetered incorrectly.\\
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{login2.eps}
+	\caption{Login in the system}
+\end{figure}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{login.eps}
+	\caption{Captcha test}
+\end{figure}
 
 \subsubsection{Log out from the system}
 \vspace{0.5cm}
@@ -71,23 +81,28 @@ enetered incorrectly.\\
 \item [\textbf{Procedure:}] AddCoordinator
 \item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
 \item [\textbf{Primary Actor}:] Administrator Kuzme
-\item [\textbf{Secondary Actor(s)}:] Coordinator Maria
-\item [\textbf{Goal:}] Add a new coordinator Maria to the system.
+\item [\textbf{Secondary Actor(s)}:] Coordinator Steve
+\item [\textbf{Goal:}] Add a new coordinator Steve to the system.
 \item [\textbf{Level}:] User-Goal level
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{Kuzma} executes the \emph{login} scenario.\\
 2. \emph{Kuzma} click button `Add a coordinator`.\\
-3. \emph{Kuzma} enters ID `2`, login `Maria` and password `1234`. \\
+3. \emph{Kuzma} enters ID `1`, login `steve` and password `123456789`. \\
 4. \emph{Kuzma} click button `Create`. \\
-5. \emph{Kuzma} \emph{CMS} informs `Kuzma` that coordinator `Maria` is added. 
+5. \emph{Kuzma} \emph{CMS} informs `Kuzma` that coordinator Steve is added. 
 \item [\textbf{Extensions}]:\\
-5.a \emph{CMS} informs \emph{Kuzma} that coordinator with ID '2' already
+5.a \emph{CMS} informs \emph{Kuzma} that coordinator with ID '1' already
 exists.\\
 \hspace*{0.5cm} \textbf{procedure ends}
 }
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{addcoord2.eps}
+	\caption{Adding new coordinator}
+\end{figure}
 
 \subsubsection{Delete Coordinator}
 \vspace{0.5cm}
@@ -103,16 +118,21 @@ exists.\\
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{Kuzma} executes the `login' scenario\\
 2. \emph{Kuzma} click button `Delete a coordinator`.\\
-3. \emph{Kuzma} enters ID `1`. \\
+3. \emph{Kuzma} enters ID `2`. \\
 4. \emph{Kuzma} click button `Delete`. \\
 4. \emph{Kuzma} \emph{CMS} informs Kuzma that coordinator Nikita is deleted. 
 \item [\textbf{Extensions}]:\\
-5.a \emph{CMS} informs \emph{Kuzma} that coordinator with ID '1' doesn't
+5.a \emph{CMS} informs \emph{Kuzma} that coordinator with ID '2' doesn't
 exist.\\ \hspace*{0.5cm} \textbf{procedure ends}
 }
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{deletecoord.eps}
+	\caption{Deleting the coordinator}
+\end{figure}
 
 
 \subsubsection{Get Time Statistics}
@@ -120,7 +140,7 @@ exist.\\ \hspace*{0.5cm} \textbf{procedure ends}
 \hrule
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] AddCoordinator
+\item [\textbf{Procedure:}] GetTimeStatistic
 \item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
 \item [\textbf{Primary Actor}:] Administrator Kuzme
 \item [\textbf{Goal:}] To get the list of alerts and crises within a defined
@@ -141,6 +161,11 @@ fields.\\
 \hrule
 \vspace{0.5cm}
 
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{crisis_stats.eps}
+	\caption{Get time statistic}
+\end{figure}
+
 \subsection{ComCompany}
 
 \subsubsection{Alert creation}
@@ -155,7 +180,7 @@ fields.\\
 send it to coordinator.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{ComCom} choose type of the person by clicking on 'witness' row. \\
+1. \emph{ComCom} choose type of the person by clicking on 'victim' row. \\
 2. \emph{ComCom} enter current date '2017/02/03'. \\
 3. \emph{ComCom} enter contact phone number '+352621854584'. \\
 4. \emph{ComCom} enter longitude '4.37274928' and latitude '50.351854584' of a
@@ -167,6 +192,11 @@ car crash.\\
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{comcom.eps}
+	\caption{Alert creation}
+\end{figure}
 
 \subsubsection{Information diffusion}
 \vspace{0.5cm}
@@ -193,6 +223,11 @@ Mr.Kuznetsov requires pick-up from car crash location. His coordinates are:
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{diffusion.eps}
+	\caption{Information diffusion}
+\end{figure}
 
 \subsection{Coordinator}
 
@@ -228,10 +263,21 @@ report panel.\\
 \hrule
 \vspace{0.5cm}
 
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{coordinatoralert.eps}
+	\caption{Getting new alert}
+\end{figure}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{coorinatorcrises.eps}
+	\caption{Managing crises}
+\end{figure}
 
 
-
-
+\begin{figure}[h]
+    \includegraphics[scale=0.75]{reportpanel.eps}
+	\caption{Report panel}
+\end{figure}
 
 
 
