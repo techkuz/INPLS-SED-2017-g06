@@ -14,12 +14,20 @@ means of the \gls{UI Processing View}.
 
 
 \section{Deployment view}
-The aim of the \gls{Deployment View} is to describe the different processing nodes that compose
-the deployment infrastructure and how they are interconnected. A processing node
-corresponds to a piece of hardware aimed at executing either the whole software
-system or a sub-part of it.
+System's architecture follows client-server software architecture with 3 layers.
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{./images/Architecture.eps}
+\end{center}
+\caption{Deployment view}
+\end{figure}
 
+\begin{itemize}
+  \item Client's layer holds the UIs
+  \item Server's layer holds the system operations
+  \item Database's layer holds the data persistance
+\end{itemize}
 
 
 \section{Implementation view}
