@@ -2,12 +2,28 @@
 \label{chap:know_limitations}
 
 
-All known and non solved issues (like bugs, missing functionalities, abnormal
-behavior, etc.) should be precisely stated and described.
+\section{General issues}
+If you have any problems first try to visit
+\url{http://messir.uni.lu:8090/confluence/questions/}. There you can post or
+find some relevant information about your inquiry.
 
 
 \section{Issue 1}
-TODO
+When administrator tries to log in through the admin system, it doesn't
+accept that which is written in the readme file.\\
+
+\noindent \textbf{Corrective actions}\\
+
+1. The simplest way to know if all the VM are up and running is looking at the
+messages that appear after you type vagrant up \\
+2. Other thing you could try is to type in your console: vagrant box list .It
+shows the different vagrant boxes already downloaded in your machine.\\
+3. Also in case of using Vagrant project you need to check if all virtual
+machines were started correctly. In particular you should login into the server
+VM and see if the server has been started: you can do it by typing:  ps -ax |
+grep java which displays all Java processes running on the machine.
 
 \section{Issue 2}
-TODO
+At the moment system doesnot support mobile platforms such as iOS and Android.
+In future we plane to extend supported platforms. However now it is mandatory to
+use web version of the software.
