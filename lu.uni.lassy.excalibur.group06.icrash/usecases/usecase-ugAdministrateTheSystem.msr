@@ -20,13 +20,15 @@ package icrash.usecases.ugAdministrateTheSystem {
 			     executes oeAddCoordinator
 			step c: actAdministrator
 			     executes oeDeleteCoordinator
+
 			
 			ordering constraint 
-			   "steps (a) (b) and (c) executions are interleaved 
-          (steps (b) and (c) have their protocol constrained 
-           by steps of (a))."
-      ordering constraint 
-          "steps (a) (b) and (c) can be executed multiple times."
+				"steps (a) (b) and (c) executions are interleaved 
+         		(steps (b) and (c) have their protocol constrained 
+          		by steps of (a))."
+      		ordering constraint 
+          		"steps (a) (b) and (c) can be executed multiple times."
 		}
+
 	}
 }

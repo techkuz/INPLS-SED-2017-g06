@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>lu.uni.lassy.excalibur.examples.icrash</name>
+	<name>lu.uni.lassy.excalibur.group06.icrash</name>
 	<comment></comment>
 	<projects>
 		<project>lu.uni.lassy.excalibur.standard.specification.libraries</project>
