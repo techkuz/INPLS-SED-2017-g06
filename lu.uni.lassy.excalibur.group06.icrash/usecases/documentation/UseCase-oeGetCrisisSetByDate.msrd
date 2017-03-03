@@ -1,0 +1,24 @@
+/*
+@author Nikita
+@date Fri Mar 03 21:37:03 MSK 2017
+*/
+
+
+@@Use Case Subfunction icrash.usecases.subfunctions.oeGetCrisisSetByDate
+@description "The goal is to get a set of crises received on particular date"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

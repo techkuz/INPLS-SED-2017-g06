@@ -1,0 +1,10 @@
+/*
+@author Nikita
+@date Fri Mar 03 21:42:04 MSK 2017
+*/
+
+
+@@view ugGetTimeStatistics
+@model Use-Case icrash.usecases.ugGetTimeStatistics.ugGetTimeStatistics 
+@description ""
+@caption ""

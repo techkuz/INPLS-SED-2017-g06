@@ -1,0 +1,22 @@
+/*
+@author Nikita
+@date Fri Mar 03 21:32:17 MSK 2017
+*/
+@@Use Case icrash.usecases.ugGetTimeStatistics.ugGetTimeStatistics
+@description "The goal is to get time statistics of handling alerts and crises per defined period of time"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

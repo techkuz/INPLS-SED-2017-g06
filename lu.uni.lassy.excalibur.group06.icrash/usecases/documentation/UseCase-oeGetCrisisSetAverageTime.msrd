@@ -1,0 +1,24 @@
+/*
+@author Nikita
+@date Fri Mar 03 21:36:07 MSK 2017
+*/
+
+
+@@Use Case Subfunction icrash.usecases.subfunctions.oeGetCrisisSetAverageTime
+@description "The goal is to get an average time of handling crises per defined period of time "
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

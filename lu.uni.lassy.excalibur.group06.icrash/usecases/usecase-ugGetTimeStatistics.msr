@@ -1,0 +1,36 @@
+/*
+* @author Nikita
+* @date Fri Mar 03 21:20:44 MSK 2017
+*/
+
+package icrash.usecases.ugGetTimeStatistics {
+
+	import icrash.environment
+	import icrash.usecases.subfunctions
+	import icrash.concepts.primarytypes.datatypes
+	import icrash.concepts.primarytypes.classes
+	import icrash.concepts.secondarytypes.datatypes
+	import lu.uni.lassy.messir.libraries.primitives
+	import lu.uni.lassy.messir.libraries.math
+	import lu.uni.lassy.messir.libraries.calendar
+	import lu.uni.lassy.messir.libraries.primitives
+
+
+	Use Case Model {
+
+	use case system usergoal ugGetTimeStatistics(AdtDate:dtDate) {
+		
+     	actor actAdministrator[primary,active]
+      
+      	reuse oeGetCrisisSetByDate[0..*]
+      	
+      	reuse oeGetCrisisSetAverageTime[0..*]
+      	
+		step a: actAdministrator executes oeGetCrisisSetByDate
+		step b: actAdministrator executes oeGetCrisisSetAverageTime
+		
+		} 
+	}
+}
+
+

@@ -136,8 +136,17 @@ import icrash.environment
     }
   }
 
-  use case system subfunction oeGetStatistics() {
+	use case system subfunction oeGetCrisisSetAverageTime(ActCrisis:ctCrisis) {
 			actor actAdministrator[primary, active]
+		    returned messages {
+  				ieMessage(AMessage) returned to actAdministrator
+   			}
+		}
+	use case system subfunction oeGetCrisisSetByDate(AdtDate:dtDate) {
+    		actor actAdministrator[primary,active]
+   			returned messages {
+      		ieSendACrisis(ActCrisis) returned to actCoordinator
 		}
 	}
+}
 }

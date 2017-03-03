@@ -36,12 +36,17 @@ import lu.uni.lassy.messir.libraries.calendar
 											
 				operation oeDeleteCoordinator(
 											AdtCoordinatorID:dtCoordinatorID ):ptBoolean
+											
+											
+				operation oeGetCrisisSetByDate(ActCrisis:ctCrisis):ptBoolean
+				operation oeGetCrisisSetAverageTime(AdtDate:dtDate):ptBoolean
 			}
 			
 			input interface inactAdministrator{
 				
 				operation ieCoordinatorAdded():ptBoolean
 				operation ieCoordinatorDeleted():ptBoolean
+				operation ieSendACrisis(ActCrisis:ctCrisis):ptBoolean
 	 		}
 		}
 		
