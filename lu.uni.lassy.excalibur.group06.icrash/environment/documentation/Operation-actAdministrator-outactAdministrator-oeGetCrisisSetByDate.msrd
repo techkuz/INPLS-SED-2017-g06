@@ -1,0 +1,34 @@
+/*
+@author KuzmaQ
+@date Sat Mar 04 19:59:17 EAT 2017
+*/
+
+
+@@Operation
+icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetByDate
+//parameters
+@parameter
+icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetByDate.ActCrisis
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

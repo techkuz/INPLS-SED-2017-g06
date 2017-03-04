@@ -904,6 +904,12 @@
     <semanticResources>usecases/documentation/UseCase-oeGetCrisisSetAverageTime.msrd</semanticResources>
     <semanticResources>usecases/documentation/UseCase-oeGetCrisisSetByDate.msrd</semanticResources>
     <semanticResources>documentation/View-ugGetTimeStatistics.msrd</semanticResources>
+    <semanticResources>environment/documentation/Operation-actAdministrator-outactAdministrator-oeGetCrisisSetByDate.msrd</semanticResources>
+    <semanticResources>environment/documentation/Operation-actAdministrator-outactAdministrator-oeGetCrisisSetAverageTime.msrd</semanticResources>
+    <semanticResources>operations/environment/oeSendNotifications.msr</semanticResources>
+    <semanticResources>documentation/View-uc-oeSendNotifications.msrd</semanticResources>
+    <semanticResources>environment/documentation/Actor-actRelatives.msrd</semanticResources>
+    <semanticResources>operations/environment/documentation/UseCase-oeSendNotifications.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_Aguk8EY3EeOwoLagakxXNQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_8IZyuNKSEeadaP6YRq5p0w" name="cm-pt-ct-gv-01" representation="_frDQIFBBEeOoKst3jxjvgA">
@@ -3010,7 +3016,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5K2-ElVKEeStA_Y3J8Dn0A"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_5K2XAVVKEeStA_Y3J8Dn0A" fontName="Lucida Sans" fontHeight="10"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5K2XAlVKEeStA_Y3J8Dn0A" x="44" y="49" width="186" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5K2XAlVKEeStA_Y3J8Dn0A" x="30" y="30" width="186" height="50"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_5K1I4VVKEeStA_Y3J8Dn0A"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_5K1I4lVKEeStA_Y3J8Dn0A"/>

@@ -6,5 +6,6 @@
 
 @@view ugGetTimeStatistics
 @model Use-Case icrash.usecases.ugGetTimeStatistics.ugGetTimeStatistics 
-@description ""
+@description "The goal is to get time statistics of handling alerts and crises per defined period of time"
 @caption ""
+ 

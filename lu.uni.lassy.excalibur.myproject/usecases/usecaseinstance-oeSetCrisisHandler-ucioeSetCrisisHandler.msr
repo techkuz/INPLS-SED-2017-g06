@@ -1,0 +1,12 @@
+package usecases.ucioeSetCrisisHandler {
+	import lu.uni.lassy.excalibur.myproject.usecases
+
+	Use Case Model {
+
+		use case instance ucioeSetCrisisHandler : subfunction oeSetCrisisHandler{
+			actors {
+				
+			}
+		}
+	}
+}

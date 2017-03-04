@@ -3,7 +3,7 @@ package icrash.concepts.primarytypes.associations {
 import icrash.concepts.primarytypes.datatypes
 import icrash.concepts.primarytypes.classes
 import icrash.environment
-import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.primitives 
 
 	Concept Model {
 		

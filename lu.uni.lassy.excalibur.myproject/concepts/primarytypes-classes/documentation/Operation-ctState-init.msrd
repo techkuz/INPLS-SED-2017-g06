@@ -1,0 +1,22 @@
+/*
+@author KuzmaQ
+@date Fri Mar 03 14:26:02 EAT 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.myproject.concepts.primarytypes.classes.ctState.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.myproject.concepts.primarytypes.classes.ctState.init.AvpStarted
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctState type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctState instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

@@ -1,7 +1,7 @@
 package icrash.concepts.secondarytypes.datatypes {
 
 import lu.uni.lassy.messir.libraries.primitives
-import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.string 
 
 import icrash.concepts.primarytypes.datatypes
 

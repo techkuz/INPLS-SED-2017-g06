@@ -1,0 +1,26 @@
+/*
+@author KuzmaQ
+@date Sat Mar 04 21:54:43 EAT 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.examples.icrash.concepts.oeSendNotifications.msr.oeSendNotifications
+@description "ComCompany send notification about user of iCrash being in car crash"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+Message from authorized user is received
+"
+@endPreConditions
+@postCondition
+"
+Messages to relatives are sent
+"
+@endPostConditions
+@additionalInformation
+"
+List of relatives might have more than one person
+"

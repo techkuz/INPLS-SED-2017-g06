@@ -1,0 +1,24 @@
+/*
+@author KuzmaQ
+@date Fri Mar 03 14:26:12 EAT 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.myproject.usecases.oeLogIn
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"
