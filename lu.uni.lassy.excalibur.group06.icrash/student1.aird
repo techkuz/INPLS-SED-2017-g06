@@ -449,6 +449,12 @@
     <semanticResources>usecases/documentation/UseCase-oeGetCrisisSetAverageTime.msrd</semanticResources>
     <semanticResources>usecases/documentation/UseCase-oeGetCrisisSetByDate.msrd</semanticResources>
     <semanticResources>documentation/View-ugGetTimeStatistics.msrd</semanticResources>
+    <semanticResources>environment/documentation/Operation-actAdministrator-outactAdministrator-oeGetCrisisSetByDate.msrd</semanticResources>
+    <semanticResources>environment/documentation/Operation-actAdministrator-outactAdministrator-oeGetCrisisSetAverageTime.msrd</semanticResources>
+    <semanticResources>operations/environment/oeSendNotifications.msr</semanticResources>
+    <semanticResources>documentation/View-uc-oeSendNotifications.msrd</semanticResources>
+    <semanticResources>environment/documentation/Actor-actRelatives.msrd</semanticResources>
+    <semanticResources>operations/environment/documentation/UseCase-oeSendNotifications.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_UmILAPWqEeSOM9Kfym77Zg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_FtdqoABBEeejqtGB8_FDiA" name="ugGetTimeStatistics" representation="_Ftgt8ABBEeejqtGB8_FDiA">

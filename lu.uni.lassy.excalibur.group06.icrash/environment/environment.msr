@@ -132,5 +132,12 @@ import lu.uni.lassy.messir.libraries.calendar
 			input interface inactActivator{
 	 		}
 		}
+	actor actRelatives role rnactRelatives cardinality[1 .. *] {
+			input interface inactRelatives {
+			}
+			output interface outactRelatives {
+			}
+		}
+
 	}
 }

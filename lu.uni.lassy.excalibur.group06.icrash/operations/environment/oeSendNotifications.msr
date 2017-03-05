@@ -1,0 +1,20 @@
+/*
+* @author KuzmaQ
+* @date Sat Mar 04 21:47:00 EAT 2017
+*/
+
+package lu.uni.lassy.excalibur.examples.icrash.concepts.oeSendNotifications.msr {
+
+import lu.uni.lassy.messir.libraries.primitives
+
+
+	Use Case Model {
+
+	use case system subfunction oeSendNotifications() {
+			actor icrash.environment.actComCompany[primary, active] 
+			actor icrash.environment.actRelatives[secondary, passive, multiple]
+		}
+	}
+
+
+}

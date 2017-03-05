@@ -1,0 +1,26 @@
+/*
+@author KuzmaQ
+@date Fri Mar 03 14:26:10 EAT 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.myproject.usecases.oeSetCrisisHandler
+@description ""
+@parameter lu.uni.lassy.excalibur.myproject.usecases.oeSetCrisisHandler.AdtCrisisID ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

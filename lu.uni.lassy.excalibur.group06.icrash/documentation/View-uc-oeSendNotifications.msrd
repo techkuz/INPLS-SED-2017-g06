@@ -1,0 +1,10 @@
+/*
+@author KuzmaQ
+@date Sat Mar 04 21:49:33 EAT 2017
+*/
+
+
+@@view uc-oeSendNotifications
+@model Use-Case lu.uni.lassy.excalibur.examples.icrash.concepts.oeSendNotifications.msr.oeSendNotifications 
+@description "ComCompany sends notifications to relatives about user being in a car crash"
+@caption "ComCompany sends notifications to relatives about user being in a car crash"

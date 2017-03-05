@@ -1,0 +1,10 @@
+/*
+@author KuzmaQ
+@date Fri Mar 03 13:47:37 EAT 2017
+*/
+
+
+@@view uc-oeSetCrisisHandler
+@model Use-Case lu.uni.lassy.excalibur.myproject.usecases.oeSetCrisisHandler 
+@description "goal is to declare himself as been the handler of a crisis having the specified id"
+@caption ""

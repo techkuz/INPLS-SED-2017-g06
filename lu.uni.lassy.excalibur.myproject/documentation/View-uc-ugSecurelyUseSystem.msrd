@@ -1,0 +1,11 @@
+/*
+@author KuzmaQ
+@date Fri Mar 03 14:12:52 EAT 2017
+*/
+
+
+@@view uc-ugSecurelyUseSystem
+@model Use-Case lu.uni.lassy.excalibur.myproject.usecases.ugSecurelyUseSystem 
+@description "the actAdministrators goal is to follow an identification procedure to be allowed to add or delete the
+necessary crisis coordinators that will be granted the responsibility to handle alerts and crisis."
+@caption ""

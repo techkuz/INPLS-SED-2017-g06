@@ -1,0 +1,10 @@
+/*
+@author KuzmaQ
+@date Fri Mar 03 14:07:13 EAT 2017
+*/
+
+
+@@view uc-oeSollicitateCrisisHandling
+@model Use-Case lu.uni.lassy.excalibur.myproject.usecases.oeSollicitateCrisisHandling 
+@description "the actActivators goal is to decrease the number of unhandled crisis"
+@caption ""
