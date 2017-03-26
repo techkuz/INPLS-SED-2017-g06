@@ -3,18 +3,16 @@
 @date Fri Mar 03 21:32:17 MSK 2017
 */
 @@Use Case icrash.usecases.ugGetTimeStatistics.ugGetTimeStatistics
-@description "The goal is to get time statistics of handling alerts and crises per defined period of time"
+@description "The goal is to get time statistics of handling crises per defined period of time"
 @protocolCondition
 "the iCrash system has been deployed"
 @endProtocolConditions
 @preCondition
-"the date or period has been chosen, the date is no later the current date
-
-"
+"the date or period has been chosen, the date is no later the current date"
 @endPreConditions
 @postCondition
 "
-all information about particular alerts and crises is received, statistics is received
+all information about particular crises is received, statistics is received
 "
 @endPostConditions
 @additionalInformation
