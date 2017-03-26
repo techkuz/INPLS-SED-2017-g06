@@ -8,10 +8,14 @@
 "the iCrash system has been deployed"
 @endProtocolConditions
 @preCondition
-"none"
+"the date or period has been chosen, the date is no later the current date
+
+"
 @endPreConditions
 @postCondition
-"none"
+"
+all information about particular alerts and crises is received, statistics is received
+"
 @endPostConditions
 @additionalInformation
 "

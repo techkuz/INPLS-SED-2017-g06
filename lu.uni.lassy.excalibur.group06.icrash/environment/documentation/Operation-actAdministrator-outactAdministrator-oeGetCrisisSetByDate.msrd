@@ -1,34 +1,30 @@
-/*
-@author KuzmaQ
-@date Sat Mar 04 19:59:17 EAT 2017
-*/
-
 
 @@Operation
 icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetByDate
 //parameters
 @parameter
-icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetByDate.ActCrisis
-""
+icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetByDate.AdtDate
+"the date used to determine the crises to send back to the actor"
 @endParameters
 
-@description "
- "
+@description 
+"sent to request all the ctCrisis instances having a specific date with time statistics of changing status"
 //preProtocol descriptions
 @preP
-" "
+"the system is started"
+@preP
+"the administrator is logged in"
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"the date is not later than the current date"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the post state is the one obtained by satisfying the \msrcode{isSentToAdministtator} predicate for each crisis having the provided date"
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none"
 @endPostP
-//example
-@example" "
+
