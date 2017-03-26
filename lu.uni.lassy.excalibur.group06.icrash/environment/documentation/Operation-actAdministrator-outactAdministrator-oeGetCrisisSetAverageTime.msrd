@@ -1,34 +1,29 @@
-/*
-@author KuzmaQ
-@date Sat Mar 04 19:59:18 EAT 2017
-*/
-
 
 @@Operation
 icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetAverageTime
 //parameters
 @parameter
-icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetAverageTime.AdtDate
-""
+icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetAverageTime.ActCrisis
+"the average time calculation takes times of crises received"
 @endParameters
 
-@description "
- "
+@description 
+"After getting a crisis set it is allowed to get average time statistics "
 //preProtocol descriptions
 @preP
-" "
+"the system is started"
+@preP
+"the administrator is logged in"
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"at least one crisis is received"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the average time of handling crises is obtained and sends to the coordinator"
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none"
 @endPostP
-//example
-@example" "

@@ -38,8 +38,8 @@ import lu.uni.lassy.messir.libraries.calendar
 											AdtCoordinatorID:dtCoordinatorID ):ptBoolean
 											
 											
-				operation oeGetCrisisSetByDate(ActCrisis:ctCrisis):ptBoolean
-				operation oeGetCrisisSetAverageTime(AdtDate:dtDate):ptBoolean
+				operation oeGetCrisisSetByDate(AdtDate:dtDate):ptBoolean
+				operation oeGetCrisisSetAverageTime(ActCrisis:ctCrisis):ptBoolean
 			}
 			
 			input interface inactAdministrator{
