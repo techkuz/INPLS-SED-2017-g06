@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=latex 2017.1.11)  3 MAR 2017 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=latex 2017.1.11)  26 MAR 2017 22:18
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -2714,7 +2714,14 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Warning: Unused global option(s):
     [graybox,envcountchap,sectrefs].
 
-(./report.aux)
+(./report.aux
+
+LaTeX Warning: Label `messirbook' multiply defined.
+
+
+LaTeX Warning: Label `armour01usecase' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -3065,54 +3072,155 @@ Package microtype Info: Character `/' is missing
 Package microtype Info: Character `AE ' is missing
 (microtype)             in font `OT1/uncl/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-
-
-LaTeX Warning: Citation `messirbook' on page 10 undefined on input line 19.
-
 ) (./doc-gen/doc-gen.tex (./doc-gen/usecase-model/usecase-model.tex
-
-LaTeX Warning: Citation `armour01usecase' on page 10 undefined on input line 5.
-
-
 (./doc-gen/usecase-model/usergoal/RE-use-case-ugSecurelyUseSystem.tex
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--11
+ [] [] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+phv on input line 11.
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 11.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 11.
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 11--11
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 11--11
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 11--11
+ [] [] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 18.
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 11--46
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 46--47
+ [] [] 
+ []
+
 File: ./images-report-gen/usecase-model/usergoal/uc-ugSecurelyUseSystem.eps Gra
 phic file (type eps)
-
 <./images-report-gen/usecase-model/usergoal/uc-ugSecurelyUseSystem.eps>
-Overfull \hbox (422.6894pt too wide) in paragraph at lines 16--17
+Overfull \hbox (63.34691pt too wide) in paragraph at lines 59--60
  [][] 
  []
 
 ) (./doc-gen/usecase-model/subfunction/RE-use-case-oeSetCrisisHandler.tex
+[10] [11]
+Overfull \hbox (24.79997pt too wide) in alignment at lines 9--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[][]|
+ []
+
+
+Overfull \hbox (73.3479pt too wide) in paragraph at lines 16--16
+[]| 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--48
+ [] [] 
+ []
+
 File: ./images-report-gen/usecase-model/subfunction/uc-oeSetCrisisHandler.eps G
 raphic file (type eps)
-
 <./images-report-gen/usecase-model/subfunction/uc-oeSetCrisisHandler.eps>
-Overfull \hbox (310.26941pt too wide) in paragraph at lines 14--15
+Overfull \hbox (49.2944pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
 )
 (./doc-gen/usecase-model/subfunction/RE-use-case-oeSollicitateCrisisHandling.te
 x
+Overfull \hbox (24.79997pt too wide) in alignment at lines 9--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--10
+ [] [] 
+ []
+
+
+Overfull \hbox (24.79997pt too wide) in alignment at lines 10--54
+ [] [] 
+ []
+
+[12]
 File: ./images-report-gen/usecase-model/subfunction/uc-oeSollicitateCrisisHandl
 ing.eps Graphic file (type eps)
 
 <./images-report-gen/usecase-model/subfunction/uc-oeSollicitateCrisisHandling.e
 ps>
-Overfull \hbox (369.49066pt too wide) in paragraph at lines 14--15
+Overfull \hbox (10.14815pt too wide) in paragraph at lines 64--65
  [][] 
  []
 
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-[11] [12] [13]) (./doc-gen/environment-model/environment-model.tex [14]
+ [13]
+[14] [15]) (./doc-gen/environment-model/environment-model.tex [16]
 Chapter 3.
-) (./doc-gen/concept-model/concept-model.tex [15
+) (./doc-gen/concept-model/concept-model.tex [17
 
-] [16
+] [18
 
 ]
 Chapter 4.
@@ -3134,36 +3242,27 @@ ex)
 (./doc-gen/concept-model/comments-tables/secondaryTypesAssociations-comments-ta
 ble.tex)
 (./doc-gen/concept-model/comments-tables/secondaryTypesAggregations-comments-ta
-ble.tex [17])
+ble.tex [19])
 (./doc-gen/concept-model/comments-tables/secondaryTypesCompositions-comments-ta
-ble.tex)) (./doc-gen/operation-model/operation-model.tex [18]
+ble.tex)) (./doc-gen/operation-model/operation-model.tex [20]
 Chapter 5.
-) (./doc-gen/test-model/test-model.tex [19
+) (./doc-gen/test-model/test-model.tex [21
 
-] [20]
+] [22]
 Chapter 6.
-)) [21
+)) [23
 
-] (./doc/additional-constraints/additional-constraints.tex [22
+] (./doc/additional-constraints/additional-constraints.tex [24
 
 ]
 Chapter 7.
-) [23] (./doc/appendix/appendix.tex) (./doc-gen/appendix/appendix-gen.tex
-(./doc-gen/appendix/appendix-undocumentedMsrSpecElements.tex [24
+) [25] (./doc/appendix/appendix.tex) (./doc-gen/appendix/appendix-gen.tex
+(./doc-gen/appendix/appendix-undocumentedMsrSpecElements.tex [26
 
 ]
 Appendix A.
-[25]) (./doc-gen/appendix/appendix-msrSpecFilesListings.tex [26]
+[27]) (./doc-gen/appendix/appendix-msrSpecFilesListings.tex [28]
 Appendix B.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
-(c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `pcr' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
 (./src-gen/messir-spec/.views.msr
 LaTeX Font Info:    Try loading font information for TS1+pcr on input line 2.
 
@@ -3177,7 +3276,7 @@ Package microtype Info: Loading generic settings for font family
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 4.
 )
-(./src-gen/messir-spec/environment/environment.msr [27
+(./src-gen/messir-spec/environment/environment.msr [29
 
 ])
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
@@ -3192,7 +3291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--18
  []
 
 (./src-gen/messir-spec/concepts/primarytypes-classes/primarytypes-classes.msr)
-[28]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/primarytypes-
  []
@@ -3213,7 +3312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--33
 
 
 (./src-gen/messir-spec/concepts/secondarytypes-classes/secondarytypes-classes.m
-sr [29])
+sr [31])
 Underfull \hbox (badness 10000) in paragraph at lines 38--38
 []\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/concepts/secondarytypes-
  []
@@ -3225,18 +3324,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--48
 []\T1/cmr/bx/n/14.4 File ./src-gen/messir-spec/usecases/usecaseinstance-
  []
 
-[30]
+[32]
 (./src-gen/messir-spec/usecases/usecaseinstance-oeSetCrisisHandler-ucioeSetCris
 isHandler.msr) (./src-gen/messir-spec/usecases/usecases.msr)))
 Overfull \hbox (73.81636pt too wide) has occurred while \output is active
 \T1/cmr/m/sl/10.95 B.10.  FILE /SRC-GEN.../USECASEINSTANCE-OESETCRISISHANDLER-U
-CIOESETCRISISHANDLER.MSR \T1/cmr/m/n/10.95 31
+CIOESETCRISISHANDLER.MSR \T1/cmr/m/n/10.95 33
  []
 
-[31]
+[33]
 No file report.gls.
-[32]
-No file report.bbl.
+[34] (./report.bbl [35
+
+
+] [36
+
+])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the report.maf file.
@@ -3248,14 +3351,13 @@ Package minitoc(hints) Info: I0053
 (minitoc(hints))             facilities can not be used for new types 
 (minitoc(hints))             of floats defined by the float package.
 
+
 Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the report.log file.
 
-Package atenddvi Info: Last page = 33.
-[33
-
-]
+Package atenddvi Info: Last page = 37.
+[37]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 84.
  (./report.aux)
@@ -3265,16 +3367,16 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: DC6DA1C6ECC77EBFCC69E2B4FDBA3D10;5348.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 59396 strings out of 493014
- 1276932 string characters out of 6137019
- 1826842 words of memory out of 5000000
- 61371 multiletter control sequences out of 15000+600000
- 36925 words of font info for 110 fonts, out of 8000000 for 9000
+ 59472 strings out of 493014
+ 1277993 string characters out of 6137019
+ 1831424 words of memory out of 5000000
+ 61435 multiletter control sequences out of 15000+600000
+ 44070 words of font info for 116 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  69i,16n,98p,10568b,2021s stack positions out of 5000i,500n,10000p,250000b,80000s
 
-Output written on report.dvi (33 pages, 193552 bytes).
+Output written on report.dvi (37 pages, 212168 bytes).

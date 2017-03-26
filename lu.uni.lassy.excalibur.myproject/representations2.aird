@@ -242,6 +242,7 @@
   <semanticResources>usecases/documentation/UseCase-oeLogIn.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-oeLogOut.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-ugSecurelyUseSystem.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-ugSecurelyUserSystem.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_PIGmMO-EEeaEXIncoD0o9w">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

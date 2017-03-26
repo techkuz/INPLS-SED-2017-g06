@@ -40,6 +40,8 @@ import lu.uni.lassy.messir.libraries.string
 		reuse oeLogIn[1..1]
 		reuse oeLogOut[1..1]
 		}
+	use case system usergoal ugSecurelyUserSystem() {
+		}
 	}
 
 }
