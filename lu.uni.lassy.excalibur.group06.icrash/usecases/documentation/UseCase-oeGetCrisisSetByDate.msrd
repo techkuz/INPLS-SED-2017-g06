@@ -5,17 +5,20 @@
 
 
 @@Use Case Subfunction icrash.usecases.subfunctions.oeGetCrisisSetByDate
-@description "The goal is to get a set of crises received on particular date"
+@description "The goal is to get a set of crises received on a particular date"
 @protocolCondition
 "
+the iCrash system has been deployed
 "
 @endProtocolConditions
 @preCondition
 "
+the entered date is no later than the current date
 "
 @endPreConditions
 @postCondition
 "
+none
 "
 @endPostConditions
 @additionalInformation

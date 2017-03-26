@@ -910,7 +910,6 @@
     <semanticResources>documentation/View-uc-oeSendNotifications.msrd</semanticResources>
     <semanticResources>environment/documentation/Actor-actRelatives.msrd</semanticResources>
     <semanticResources>operations/environment/documentation/UseCase-oeSendNotifications.msrd</semanticResources>
-    <semanticResources>operations/environment/environment-actAdministrator-oeGetCrisisSetByDate.msr</semanticResources>
     <semanticResources>documentation/View-operation-scope-outactAuthenticated-oeLogout.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_Aguk8EY3EeOwoLagakxXNQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
