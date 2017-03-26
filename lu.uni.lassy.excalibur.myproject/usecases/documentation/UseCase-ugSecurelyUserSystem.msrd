@@ -1,0 +1,24 @@
+/*
+@author KuzmaQ
+@date Sun Mar 26 22:11:43 EAT 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.myproject.usecases.ugSecurelyUserSystem
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

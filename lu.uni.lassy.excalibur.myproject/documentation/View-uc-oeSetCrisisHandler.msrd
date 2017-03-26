@@ -6,5 +6,5 @@
 
 @@view uc-oeSetCrisisHandler
 @model Use-Case lu.uni.lassy.excalibur.myproject.usecases.oeSetCrisisHandler 
-@description "goal is to declare himself as been the handler of a crisis having the specified id"
+@description "Goal is to declare himself as been the handler of a crisis having the specified id"
 @caption ""
