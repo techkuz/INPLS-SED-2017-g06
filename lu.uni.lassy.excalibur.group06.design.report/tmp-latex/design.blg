@@ -1,0 +1,459 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: design.aux
+The style file: ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+I found no \citation commands---while reading file design.aux
+"<" can't start a style-file command---line 1 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : 
+ : <<<<<<< HEAD
+(Error may have been on previous line)
+Database file #1: ./../lu.uni.lassy.excalibur.standard.report.libraries/defs/references/messir.bib
+Database file #2: doc/bibliography/design.bib
+"=" can't start a style-file command---line 2198 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : 
+ : =======
+(Error may have been on previous line)
+Illegal, another entry command---line 2215 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : entry
+ :      
+output.state is already a type "integer-global-variable" function name
+---line 2242 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : integers { output.state
+ :                         before.all mid.sentence after.sentence
+init.state.consts is already a type "wizard-defined" function name
+---line 2245 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {init.state.consts
+ :                            }
+s is already a type "string-global-variable" function name
+---line 2254 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : strings { s
+ :             t }
+output.nonnull is already a type "wizard-defined" function name
+---line 2256 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {output.nonnull
+ :                         }
+output is already a type "wizard-defined" function name
+---line 2289 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {output
+ :                 }
+output.check is already a type "wizard-defined" function name
+---line 2296 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {output.check
+ :                       }
+output.bibitem is already a type "wizard-defined" function name
+---line 2304 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {output.bibitem
+ :                         }
+fin.entry is already a type "wizard-defined" function name
+---line 2314 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {fin.entry
+ :                    }
+new.block is already a type "wizard-defined" function name
+---line 2319 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {new.block
+ :                    }
+stupid.colon is already a type "wizard-defined" function name
+---line 2326 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {stupid.colon
+ :                       }
+insert.comma is already a type "wizard-defined" function name
+---line 2329 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {insert.comma
+ :                       }
+new.sentence is already a type "wizard-defined" function name
+---line 2336 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {new.sentence
+ :                       }
+not is already a type "wizard-defined" function name
+---line 2347 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {not
+ :              }
+and is already a type "wizard-defined" function name
+---line 2353 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {and
+ :              }
+or is already a type "wizard-defined" function name
+---line 2359 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {or
+ :             }
+new.block.checka is already a type "wizard-defined" function name
+---line 2365 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {new.block.checka
+ :                           }
+new.block.checkb is already a type "wizard-defined" function name
+---line 2372 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {new.block.checkb
+ :                           }
+new.sentence.checka is already a type "wizard-defined" function name
+---line 2381 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {new.sentence.checka
+ :                              }
+new.sentence.checkb is already a type "wizard-defined" function name
+---line 2388 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {new.sentence.checkb
+ :                              }
+field.or.null is already a type "wizard-defined" function name
+---line 2397 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {field.or.null
+ :                        }
+emphasize is already a type "wizard-defined" function name
+---line 2404 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {emphasize
+ :                    }
+bold is already a type "wizard-defined" function name
+---line 2411 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {bold
+ :               }
+parens is already a type "wizard-defined" function name
+---line 2418 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {parens
+ :                 }
+nameptr is already a type "integer-global-variable" function name
+---line 2425 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : integers { nameptr
+ :                    namesleft numnames }
+format.springer.names is already a type "wizard-defined" function name
+---line 2427 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.springer.names
+ :                                }
+format.names is already a type "wizard-defined" function name
+---line 2456 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.names
+ :                       }
+format.authors is already a type "wizard-defined" function name
+---line 2485 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.authors
+ :                         }
+format.editors is already a type "wizard-defined" function name
+---line 2492 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.editors
+ :                         }
+format.title is already a type "wizard-defined" function name
+---line 2504 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.title
+ :                       }
+n.dashify is already a type "wizard-defined" function name
+---line 2511 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {n.dashify
+ :                    }
+format.date is already a type "wizard-defined" function name
+---line 2536 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.date
+ :                      }
+format.btitle is already a type "wizard-defined" function name
+---line 2553 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.btitle
+ :                        }
+tie.or.space.connect is already a type "wizard-defined" function name
+---line 2557 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {tie.or.space.connect
+ :                               }
+either.or.check is already a type "wizard-defined" function name
+---line 2565 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {either.or.check
+ :                          }
+format.bvolume is already a type "wizard-defined" function name
+---line 2572 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.bvolume
+ :                         }
+format.number.series is already a type "wizard-defined" function name
+---line 2586 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.number.series
+ :                               }
+format.edition is already a type "wizard-defined" function name
+---line 2606 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.edition
+ :                         }
+multiresult is already a type "integer-global-variable" function name
+---line 2617 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : integers { multiresult
+ :                        }
+multi.page.check is already a type "wizard-defined" function name
+---line 2619 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {multi.page.check
+ :                           }
+format.pages is already a type "wizard-defined" function name
+---line 2639 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.pages
+ :                       }
+format.vol is already a type "wizard-defined" function name
+---line 2650 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.vol
+ :                     }
+format.vol.num is already a type "wizard-defined" function name
+---line 2654 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.vol.num
+ :                         }
+pre.format.pages is already a type "wizard-defined" function name
+---line 2662 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {pre.format.pages
+ :                           }
+format.chapter.pages is already a type "wizard-defined" function name
+---line 2673 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.chapter.pages
+ :                               }
+format.in.ed.booktitle is already a type "wizard-defined" function name
+---line 2689 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.in.ed.booktitle
+ :                                 }
+empty.misc.check is already a type "wizard-defined" function name
+---line 2700 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {empty.misc.check
+ :                           }
+format.thesis.type is already a type "wizard-defined" function name
+---line 2709 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.thesis.type
+ :                             }
+format.tr.number is already a type "wizard-defined" function name
+---line 2718 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.tr.number
+ :                           }
+format.article.crossref is already a type "wizard-defined" function name
+---line 2729 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.article.crossref
+ :                                  }
+format.crossref.editor is already a type "wizard-defined" function name
+---line 2744 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.crossref.editor
+ :                                 }
+format.book.crossref is already a type "wizard-defined" function name
+---line 2761 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.book.crossref
+ :                               }
+format.incoll.inproc.crossref is already a type "wizard-defined" function name
+---line 2773 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {format.incoll.inproc.crossref
+ :                                        }
+and.the.note is already a type "wizard-defined" function name
+---line 2794 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {and.the.note
+ :                       }
+article is already a type "wizard-defined" function name
+---line 2802 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {article
+ :                  }
+book is already a type "wizard-defined" function name
+---line 2822 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {book
+ :               }
+booklet is already a type "wizard-defined" function name
+---line 2857 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {booklet
+ :                  }
+inbook is already a type "wizard-defined" function name
+---line 2874 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {inbook
+ :                 }
+incollection is already a type "wizard-defined" function name
+---line 2914 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {incollection
+ :                       }
+inproceedings is already a type "wizard-defined" function name
+---line 2944 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {inproceedings
+ :                        }
+conference is already a type "wizard-defined" function name
+---line 2993 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {conference
+ :                     } { inproceedings }
+manual is already a type "wizard-defined" function name
+---line 2995 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {manual
+ :                 }
+mastersthesis is already a type "wizard-defined" function name
+---line 3033 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {mastersthesis
+ :                        }
+misc is already a type "wizard-defined" function name
+---line 3055 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {misc
+ :               }
+phdthesis is already a type "wizard-defined" function name
+---line 3068 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {phdthesis
+ :                    }
+proceedings is already a type "wizard-defined" function name
+---line 3090 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {proceedings
+ :                      }
+techreport is already a type "wizard-defined" function name
+---line 3147 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {techreport
+ :                     }
+unpublished is already a type "wizard-defined" function name
+---line 3169 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {unpublished
+ :                      }
+default.type is already a type "wizard-defined" function name
+---line 3180 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {default.type
+ :                       } { misc }
+Illegal, macro command after read command---line 3182 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {jan} {"January"}
+Illegal, macro command after read command---line 3184 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {feb} {"February"}
+Illegal, macro command after read command---line 3186 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {mar} {"March"}
+Illegal, macro command after read command---line 3188 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {apr} {"April"}
+Illegal, macro command after read command---line 3190 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {may} {"May"}
+Illegal, macro command after read command---line 3192 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {jun} {"June"}
+Illegal, macro command after read command---line 3194 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {jul} {"July"}
+Illegal, macro command after read command---line 3196 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {aug} {"August"}
+Illegal, macro command after read command---line 3198 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {sep} {"September"}
+Illegal, macro command after read command---line 3200 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {oct} {"October"}
+Illegal, macro command after read command---line 3202 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {nov} {"November"}
+Illegal, macro command after read command---line 3204 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {dec} {"December"}
+Illegal, macro command after read command---line 3206 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {acmcs} {"ACM Computing Surveys"}
+Illegal, macro command after read command---line 3208 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {acta} {"Acta Informatica"}
+Illegal, macro command after read command---line 3210 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {cacm} {"Communications of the ACM"}
+Illegal, macro command after read command---line 3212 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {ibmjrd} {"IBM Journal of Research and Development"}
+Illegal, macro command after read command---line 3214 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {ibmsj} {"IBM Systems Journal"}
+Illegal, macro command after read command---line 3216 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {ieeese} {"IEEE Transactions on Software Engineering"}
+Illegal, macro command after read command---line 3218 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {ieeetc} {"IEEE Transactions on Computers"}
+Illegal, macro command after read command---line 3220 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {ieeetcad}
+Illegal, macro command after read command---line 3223 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {ipl} {"Information Processing Letters"}
+Illegal, macro command after read command---line 3225 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {jacm} {"Journal of the ACM"}
+Illegal, macro command after read command---line 3227 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {jcss} {"Journal of Computer and System Sciences"}
+Illegal, macro command after read command---line 3229 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {scp} {"Science of Computer Programming"}
+Illegal, macro command after read command---line 3231 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {sicomp} {"SIAM Journal on Computing"}
+Illegal, macro command after read command---line 3233 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {tocs} {"ACM Transactions on Computer Systems"}
+Illegal, macro command after read command---line 3235 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {tods} {"ACM Transactions on Database Systems"}
+Illegal, macro command after read command---line 3237 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {tog} {"ACM Transactions on Graphics"}
+Illegal, macro command after read command---line 3239 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {toms} {"ACM Transactions on Mathematical Software"}
+Illegal, macro command after read command---line 3241 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {toois} {"ACM Transactions on Office Information Systems"}
+Illegal, macro command after read command---line 3243 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {toplas} {"ACM Transactions on Programming Languages and Systems"}
+Illegal, macro command after read command---line 3245 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : macro
+ :       {tcs} {"Theoretical Computer Science"}
+Illegal, another read command---line 3247 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : read
+ :     
+longest.label is already a type "string-global-variable" function name
+---line 3249 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : strings { longest.label
+ :                         }
+number.label is already a type "integer-global-variable" function name
+---line 3251 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : integers { number.label
+ :                         longest.label.width }
+initialize.longest.label is already a type "wizard-defined" function name
+---line 3253 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {initialize.longest.label
+ :                                   }
+longest.label.pass is already a type "wizard-defined" function name
+---line 3259 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {longest.label.pass
+ :                             }
+begin.bib is already a type "wizard-defined" function name
+---line 3274 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {begin.bib
+ :                    }
+end.bib is already a type "wizard-defined" function name
+---line 3288 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : function {end.bib
+ :                  }
+">" can't start a style-file command---line 3297 of file ./../lu.uni.lassy.excalibur.standard.report.libraries/styles/lncs.bst
+ : 
+ : >>>>>>> branch 'master' of https://github.com/trthhrtz/INPLS-SED-2017-g06.git
+(Error may have been on previous line)
+You've used 0 entries,
+            2087 wiz_defined-function locations,
+            490 strings with 3859 characters,
+and the built_in function-call counts, 40 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 4
+:= -- 18
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 2
+format.name$ -- 0
+if$ -- 2
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 6
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 2
+purify$ -- 0
+quote$ -- 0
+skip$ -- 2
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 4
+(There were 112 error messages)
