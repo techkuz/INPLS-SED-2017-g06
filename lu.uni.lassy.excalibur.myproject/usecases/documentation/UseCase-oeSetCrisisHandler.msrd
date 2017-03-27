@@ -5,19 +5,22 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.myproject.usecases.oeSetCrisisHandler
-@description ""
+@description "Goal is to declare himself as been the handler of a crisis having the specified id"
 @parameter lu.uni.lassy.excalibur.myproject.usecases.oeSetCrisisHandler.AdtCrisisID ""
 @endParameters
 @protocolCondition
 "
+none
 "
 @endProtocolConditions
 @preCondition
 "
+Inquiry comes from logged-in coordinator.
 "
 @endPreConditions
 @postCondition
 "
+Declared as handler of crisis
 "
 @endPostConditions
 @additionalInformation

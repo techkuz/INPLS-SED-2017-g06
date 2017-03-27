@@ -5,17 +5,27 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.myproject.usecases.oeSollicitateCrisisHandling
-@description ""
+@description "the actActivators goal is to decrease the number of unhandled crisis"
 @protocolCondition
 "
+1. the iCrash system has been deployed.
+2. there exist some crisis still pending and for which no solicitation has been sent to the
+administrator and the coordinators for more than a predefined maximum delay.
 "
 @endProtocolConditions
 @preCondition
 "
+none
 "
 @endPreConditions
 @postCondition
 "
+1.a simple text message ieMessage(There are alerts not treated since more than the defined
+delay. Please REACT !) is sent to the system administrator and to all the coordinators of the
+environment for each crisis that is known to be not handled and for which no solicitation has
+been sent to the administrator and the coordinators for more than a predefined maximum
+delay.)
+2 the reminder period for the concerned crisis is initialized
 "
 @endPostConditions
 @additionalInformation

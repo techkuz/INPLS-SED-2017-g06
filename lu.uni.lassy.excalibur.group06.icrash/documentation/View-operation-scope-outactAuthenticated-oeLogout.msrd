@@ -4,7 +4,3 @@
 */
 
 
-@@view operation-scope-outactAuthenticated-oeLogout
-@model Operation icrash.environment.actAuthenticated.outactAuthenticated.oeLogout 
-@description ""
-@caption ""

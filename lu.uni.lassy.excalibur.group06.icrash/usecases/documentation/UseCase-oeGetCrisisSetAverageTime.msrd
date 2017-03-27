@@ -8,14 +8,17 @@
 @description "The goal is to get an average time of handling crises per defined period of time "
 @protocolCondition
 "
+the iCrash system has been deployed
 "
 @endProtocolConditions
 @preCondition
 "
+there is at least one crisis received on particular date
 "
 @endPreConditions
 @postCondition
 "
+average time is sent to an administrator
 "
 @endPostConditions
 @additionalInformation
