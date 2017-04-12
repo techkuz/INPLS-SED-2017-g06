@@ -46,8 +46,6 @@ import icrash.environment
 			}
 			postP{true}
 			
-			prolog{"src/Operations/Environment/OUT/outactAdministrator-oeGetCrisisSetByDate.pl"}
-
 
 		}
 	}

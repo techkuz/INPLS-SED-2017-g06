@@ -1,3 +1,8 @@
+/*
+@author Nikita
+@date Thu Apr 13 01:33:15 MSK 2017
+*/
+
 
 @@Operation
 icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetAverageTime
@@ -7,8 +12,7 @@ icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetAverageTim
 "the average time calculation takes times of crises received"
 @endParameters
 
-@description 
-"After getting a crisis set it is allowed to get average time statistics of handling crises"
+@description "After getting a crisis set it is allowed to get average time statistics of handling crises"
 //preProtocol descriptions
 @preP
 "the system is started"
@@ -21,7 +25,7 @@ icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetAverageTim
 @endPreF
 //postFunctional descriptions
 @postF 
-"the average time of handling crises is obtained and sends to the coordinator"
+" the average time of handling crises is obtained and sends to the coordinator"
 @endPostF
 //postProtocol descriptions
 @postP 
