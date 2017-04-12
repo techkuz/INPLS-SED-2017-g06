@@ -1,21 +1,38 @@
+/*
+@author Nikita
+@date Wed Apr 12 21:57:08 MSK 2017
+*/
+
+
 @@Actor icrash.environment.actAdministrator
-
-@description
-"represents an actor responsible of administration tasks for the \msricrash system."
-@operation icrash.environment.actAdministrator.init
-" "
-@endOperations
+@description "represents an actor responsible of administration tasks for the iCrash system.
+"
 //input events
-@inputEvent icrash.environment.actAdministrator.inactAdministrator.ieCoordinatorAdded
-"its reception confirms the creation of the requested coodinator. "
-@inputEvent icrash.environment.actAdministrator.inactAdministrator.ieCoordinatorDeleted
-"its reception confirms the deletion of the requested coodinator. "
-@endInputEvents
-
-//output events
-@outputEvent icrash.environment.actAdministrator.outactAdministrator.oeAddCoordinator
+@inputEvent
+icrash.environment.actAdministrator.inactAdministrator.ieCoordinatorAdded
 "sent to add a new coordinator in the system's post state and environment's post state."
-@outputEvent icrash.environment.actAdministrator.outactAdministrator.oeDeleteCoordinator
-"sent to delete an existing coordinator in the system's post state and environment's post state."
+@inputEvent
+icrash.environment.actAdministrator.inactAdministrator.ieCoordinatorDeleted
+"sent to delete an existing coordinator in the system's post state and environment's post
+state."
+@inputEvent
+icrash.environment.actAdministrator.inactAdministrator.ieSendACrisis
+"allows for receiving a requested ctCrisis instance."
+
+@endInputEvents
+//output events
+@outputEvent
+icrash.environment.actAdministrator.outactAdministrator.oeAddCoordinator
+"sent to add a new coordinator in the system's post state and environment's post state."
+@outputEvent
+icrash.environment.actAdministrator.outactAdministrator.oeDeleteCoordinator
+"sent to delete an existing coordinator in the system's post state and environment's post
+state."
+@outputEvent
+icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetByDate
+"sent to get a set of crises occurred on a particular date"
+@outputEvent
+icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetAverageTime
+"sent to get average time of handling received crises set"
 
 @endOutputEvents

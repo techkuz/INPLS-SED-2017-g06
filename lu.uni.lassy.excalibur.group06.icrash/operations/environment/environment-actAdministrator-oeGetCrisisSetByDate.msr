@@ -1,14 +1,53 @@
 package icrash.environment.operations.actAdministrator.outactAdministrator.oeGetCrisisSetByDate {
 
+import icrash.concepts.primarytypes.datatypes
+import icrash.concepts.primarytypes.classes
+import icrash.concepts.secondarytypes.datatypes
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.math
-import lu.uni.lassy.messir.libraries.string
 import lu.uni.lassy.messir.libraries.calendar
+import icrash.environment
 
 	Operation Model {
 
 		operation: icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetByDate(AdtDate:dtDate):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
+
+			preP{
+			  let TheSystem: ctState in
+			  let TheActor: actAdministrator in
+			  
+			  self.rnActor.rnSystem = TheSystem
+			  and self.rnActor = TheActor
+			  
+			/* PreP01 */
+			  and TheSystem.vpStarted = true
+			/* PreP02 */
+			  and TheActor.rnctAuthenticated.vpIsLogged = true
+			  }
+			preF{ 
+			  let TheSystem: ctState in
+			  let TheActor: actAdministrator in
+			  
+			  self.rnActor.rnSystem = TheSystem
+			  and self.rnActor = TheActor
+			/* PreF01 */
+			  and AdtDate <= TheSystem.clock
+			   }
+			postF{
+			  let TheSystem: ctState in
+			  let TheActor: actAdministrator in
+  			  self.rnActor.rnSystem = TheSystem
+  			  and self.rnActor = TheActor
+			  
+			  let Crises:Bag(ctCrisis) in
+			  and Crises-> forAll(isSentToAdministrator = True)
+			  			  
+			}
+			postP{true}
+			
+			prolog{"src/Operations/Environment/OUT/outactAdministrator-oeGetCrisisSetByDate.pl"}
+
 
 		}
 	}

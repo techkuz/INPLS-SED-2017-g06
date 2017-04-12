@@ -472,6 +472,8 @@
     <semanticResources>environment/documentation/Actor-actRelatives.msrd</semanticResources>
     <semanticResources>operations/environment/documentation/UseCase-oeSendNotifications.msrd</semanticResources>
     <semanticResources>documentation/View-operation-scope-outactAuthenticated-oeLogout.msrd</semanticResources>
+    <semanticResources>operations/environment/environment-actAdministrator-oeGetCrisisSetAverageTime.msr</semanticResources>
+    <semanticResources>operations/environment/environment-actAdministrator-oeGetCrisisSetByDate.msr</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_WzMfgPWqEeSOM9Kfym77Zg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Tn9AwAELEeej_sVtmE8qAw" name="uc-oeSendNotifications" representation="_Tn9AwQELEeej_sVtmE8qAw">

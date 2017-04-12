@@ -8,7 +8,7 @@ icrash.environment.actAdministrator.outactAdministrator.oeGetCrisisSetAverageTim
 @endParameters
 
 @description 
-"After getting a crisis set it is allowed to get average time statistics "
+"After getting a crisis set it is allowed to get average time statistics of handling crises"
 //preProtocol descriptions
 @preP
 "the system is started"
