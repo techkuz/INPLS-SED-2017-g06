@@ -18,7 +18,7 @@ Diagram.
 
 \subsection{oeSetClock}
 An active message used to statically set the date and time information in the
-systems state.
+systems state.\\
 
 \begin{figure}[H]
 \begin{center}
@@ -27,11 +27,16 @@ systems state.
 \caption{oeSetClock}
 \end{figure}
 
+\noindent Java Implementation:\\
+void setDate(Datum date);\\
+void setTime(int time);\\
+int clock.getTime();\\
+
 
 \subsection{oeSollicitateCrisisHandling}
 A proactive message (message of a pro-active actor with no parameter triggered
 automatically if the pre protocol condition is true) used to avoid crisis to
-stay too long in an not handled status
+stay too long in an not handled status\\
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./images/oeSollicitateCrisisHandling.eps} 
@@ -39,10 +44,15 @@ stay too long in an not handled status
 \caption{oeSollicitateCrisisHandling}
 \end{figure}
 
+\noindent Java Implementation:\\
+void sendMessage(String message);\\
+void setTime(int time);\\
+void sendResponse(String response);\\
+String getResponse();\\
 
 \subsection{oeAddCoordinator}
 Sent to add a new coordinator in the systems post state and environments post
-state.
+state.\\
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./images/oeAddCoordinator.eps} 
@@ -50,10 +60,14 @@ state.
 \caption{oeAddCoordinator}
 \end{figure}
 
+\noindent Java Implementation:\\
+void AddCoordinator(String name);\\
+String getCoordinator();\\
+void sendResponse(String response);\\
 
 \subsection{oeDeleteCoordinator}
 Sent to delete an existing coordinator in the systems post state and
-environments post state.
+environments post state.\\
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./images/oeDeleteCoordinator.eps} 
@@ -61,14 +75,24 @@ environments post state.
 \caption{oeDeleteCoordinator}
 \end{figure}
 
+\noindent Java Implementation:\\
+void deleteCoordinator(String name);\\
+String getCoordinator();\\
+void sendResponse();\\
+
 \subsection{oeLogin}
-Sent to request authorization to request access secured system operations.
+Sent to request authorization to request access secured system operations.\\
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./images/oeLogin.eps} 
 \end{center}
 \caption{oeLogin}
 \end{figure}
+
+\noindent Java Implementation:\\
+void requestAuth(String credentials);\\
+void setAuth(String credentials);\\
+String sendResponse();\\
 
 \subsection{oeLogout}
 Sent to end the secured access to specific system operations
